@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  GamePassKitTest.swift
 //  GamePassKit
 //
 //  Created by Felix Pultar on 26.05.2025.
@@ -11,6 +11,7 @@ import XCTest
 @testable import GamePassKit
 
 final class AppTests: XCTestCase {
+    // MARK: - Basic endpoint availability tests
 
     func testFetchGameCollectionReachable() async throws {
         let gameCollection = try await GamePassCatalog.fetchGameCollection(
@@ -33,6 +34,7 @@ final class AppTests: XCTestCase {
         XCTAssertFalse(games.isEmpty, "Should return game information")
         XCTAssertTrue(games.allSatisfy { !$0.title.isEmpty }, "All games should have titles")
     }
+    // MARK: - Tests of the API response structure
 
     func testGameCollectionResponseStructure() async throws {
         let gameCollection = try await GamePassCatalog.fetchGameCollection(
@@ -77,6 +79,7 @@ final class AppTests: XCTestCase {
     }
 
     private func isValidURL(_ url: URL) -> Bool { return url.scheme == "http" || url.scheme == "https" }
+    // MARK: - Comprehensive tests of known identifiers and languages
 
     func testAllKnownCatalogIdentifiers() async throws {
         let identifiers = [
@@ -129,6 +132,7 @@ final class AppTests: XCTestCase {
             }
         }
     }
+    // MARK: - Test timing and concurrent accesses
 
     func testResponseTime() async throws {
         let startTime = Date()
@@ -163,6 +167,7 @@ final class AppTests: XCTestCase {
             XCTAssertEqual(collections.count, identifiers.count, "All concurrent requests should succeed")
         }
     }
+    // MARK: - Test minimum functionality
 
     func testGameCollectionMinimumFields() async throws {
         let gameCollection = try await GamePassCatalog.fetchGameCollection(
@@ -184,6 +189,7 @@ final class AppTests: XCTestCase {
 
         XCTAssertTrue(hasPopularContent, "Should contain some Microsoft first-party games")
     }
+    // MARK: - Regression tests for URLs
 
     func testEndpointsAreWorking() async throws {
         // Test with a known working identifier
