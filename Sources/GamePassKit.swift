@@ -12,8 +12,24 @@ import Logging
 // MARK: - API types
 
 public struct Game: Sendable {
-    public let title: String
-    public let description: String
+    public let productId: String
+    public let productTitle: String
+    public let productDescription: String?
+    public let developerName: String?
+    public let publisherName: String?
+    public let shortTitle: String?
+    public let sortTitle: String?
+    public let shortDescription: String?
+    public let imageDescriptors: [GamePassImageDescriptor]?
+}
+
+public struct GamePassImageDescriptor: Sendable {
+    public let fileId: String?
+    public let height: Int?
+    public let width: Int?
+    public let uri: String?
+    public let imagePurpose: String?
+    public let imagePositionInfo: String?
 }
 
 public struct GameCollection: Sendable {
@@ -31,6 +47,11 @@ public struct CategoryHeader: Codable, Sendable {
 
 public enum GamePassCatalog {}
 
+public struct GamePassLocale: Sendable, Hashable {
+    public let language: String
+    public let market: String
+}
+
 // MARK: - API functions
 
 extension GamePassCatalog {
@@ -45,16 +66,21 @@ extension GamePassCatalog {
     }
 
     public static func fetchProductInformation(
-        gameIds: [String], languages: [String], market: String, session: URLSession = .shared
+        gameIds: [String], language: String, market: String, session: URLSession = .shared
     ) async throws -> [Game] {
         guard !gameIds.isEmpty else { throw GamePassError.invalidInput("At least one game ID must be provided") }
 
-        let url = try GamePassCatalog.buildProductInformationURL(gameIds: gameIds, languages: languages, market: market)
+        let url = try GamePassCatalog.buildProductInformationURL(gameIds: gameIds, language: language, market: market)
         let products = try await GamePassCatalog.fetchAndDecodeProductInformation(url: url, session: session)
 
         return products.compactMap { product in
             guard let localizedProperties = product.localizedProperties.first else { return nil }
-            return Game(title: localizedProperties.productTitle, description: localizedProperties.productDescription)
+            return Game(
+                productId: product.productId, productTitle: localizedProperties.productTitle,
+                productDescription: localizedProperties.productDescription,
+                developerName: localizedProperties.developerName, publisherName: localizedProperties.publisherName,
+                shortTitle: localizedProperties.shortTitle, sortTitle: localizedProperties.sortTitle,
+                shortDescription: localizedProperties.shortDescription, imageDescriptors: localizedProperties.images)
         }
     }
 }
@@ -102,13 +128,11 @@ extension GamePassCatalog {
         return GameCollection(header: headerItem, games: gameIds)
     }
 
-    private static func buildProductInformationURL(gameIds: [String], languages: [String], market: String) throws -> URL
-    {
+    private static func buildProductInformationURL(gameIds: [String], language: String, market: String) throws -> URL {
         var components = URLComponents(string: "https://displaycatalog.mp.microsoft.com/v7.0/products")
         components?.queryItems = [
             URLQueryItem(name: "bigIds", value: gameIds.joined(separator: ",")),
-            URLQueryItem(name: "languages", value: languages.joined(separator: ",")),
-            URLQueryItem(name: "market", value: market),
+            URLQueryItem(name: "languages", value: language), URLQueryItem(name: "market", value: market),
         ]
 
         guard let url = components?.url else { throw GamePassError.invalidURL }
@@ -116,7 +140,9 @@ extension GamePassCatalog {
         return url
     }
 
-    private static func fetchAndDecodeProductInformation(url: URL, session: URLSession) async throws -> [Product] {
+    private static func fetchAndDecodeProductInformation(url: URL, session: URLSession) async throws
+        -> [GamePassProduct]
+    {
         let (data, response) = try await session.data(from: url)
 
         if let httpResponse = response as? HTTPURLResponse, !(200...299).contains(httpResponse.statusCode) {
@@ -125,7 +151,7 @@ extension GamePassCatalog {
 
         let decoder = JSONDecoder()
         do {
-            let productResponse = try decoder.decode(ProductResponse.self, from: data)
+            let productResponse = try decoder.decode(GamePassProductResponse.self, from: data)
             return productResponse.products
         } catch { throw GamePassError.jsonParsingError(underlying: error) }
     }
@@ -185,6 +211,12 @@ extension GamePassCatalog {
     public static let kEAPlayPcIdentifier = "1d33fbb9-b895-4732-a8ca-a55c8b99fa2c"
     public static let kEAPlayTrialConsoleIdentifier = "490f4b6e-a107-4d6a-8398-225ee916e1f2"
     public static let kEAPlayTrialPcIdentifier = "19e5b90a-5a20-4b1d-9dda-6441ca632527"
+    // MARK: - Supported Locales
+
+    public static let kSupportedLocales = [
+        GamePassLocale(language: "en-us", market: "US"), GamePassLocale(language: "de-ch", market: "CH"),
+        GamePassLocale(language: "en-us", market: "CH"),
+    ]
 
 }
 
@@ -213,24 +245,51 @@ public enum GamePassError: LocalizedError {
 
 // MARK: - Internal types for decoding Microsoft API
 
-private struct ProductResponse: Codable {
-    let products: [Product]
+private struct GamePassProductResponse: Codable {
+    let products: [GamePassProduct]
 
     enum CodingKeys: String, CodingKey { case products = "Products" }
 }
 
-private struct Product: Codable {
-    let localizedProperties: [ProductLocalizedProperty]
+private struct GamePassProduct: Codable {
+    let productId: String
+    let localizedProperties: [GamePassProductLocalizedProperty]
 
-    enum CodingKeys: String, CodingKey { case localizedProperties = "LocalizedProperties" }
+    enum CodingKeys: String, CodingKey {
+        case productId = "ProductId"
+        case localizedProperties = "LocalizedProperties"
+    }
 }
 
-private struct ProductLocalizedProperty: Codable {
+private struct GamePassProductLocalizedProperty: Codable {
     let productTitle: String
     let productDescription: String
+    let developerName: String?
+    let publisherName: String?
+    let shortTitle: String?
+    let sortTitle: String?
+    let shortDescription: String?
+    let images: [GamePassImageDescriptor]?
 
     enum CodingKeys: String, CodingKey {
         case productTitle = "ProductTitle"
         case productDescription = "ProductDescription"
+        case developerName = "DeveloperName"
+        case publisherName = "PublisherName"
+        case shortTitle = "ShortTitle"
+        case sortTitle = "SortTitle"
+        case shortDescription = "ShortDescription"
+        case images = "Images"
+    }
+}
+
+extension GamePassImageDescriptor: Codable {
+    enum CodingKeys: String, CodingKey {
+        case fileId = "FileId"
+        case height = "Height"
+        case width = "Width"
+        case uri = "Uri"
+        case imagePurpose = "ImagePurpose"
+        case imagePositionInfo = "ImagePositionInfo"
     }
 }

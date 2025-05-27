@@ -29,10 +29,10 @@ final class AppTests: XCTestCase {
         let testGameIds = Array(gameCollection.games.prefix(5))
 
         let games = try await GamePassCatalog.fetchProductInformation(
-            gameIds: testGameIds, languages: ["en-us"], market: "US")
+            gameIds: testGameIds, language: "en-us", market: "US")
 
         XCTAssertFalse(games.isEmpty, "Should return game information")
-        XCTAssertTrue(games.allSatisfy { !$0.title.isEmpty }, "All games should have titles")
+        XCTAssertTrue(games.allSatisfy { !$0.productTitle.isEmpty }, "All games should have titles")
     }
     // MARK: - Tests of the API response structure
 
@@ -62,12 +62,12 @@ final class AppTests: XCTestCase {
 
         let testGameIds = Array(gameCollection.games.prefix(3))
         let games = try await GamePassCatalog.fetchProductInformation(
-            gameIds: testGameIds, languages: ["en-us"], market: "US")
+            gameIds: testGameIds, language: "en-us", market: "US")
 
         for game in games {
-            XCTAssertFalse(game.title.isEmpty, "Game title should not be empty")
+            XCTAssertFalse(game.productTitle.isEmpty, "Game title should not be empty")
             // Description can be empty, but should not be nil
-            XCTAssertNotNil(game.description, "Game description should not be nil")
+            XCTAssertNotNil(game.productDescription, "Game description should not be nil")
         }
     }
 
@@ -179,10 +179,10 @@ final class AppTests: XCTestCase {
         // Test that we get some popular games (this will break if they remove major titles)
         let testGames = Array(gameCollection.games)
         let games = try await GamePassCatalog.fetchProductInformation(
-            gameIds: testGames, languages: ["en-us"], market: "US")
+            gameIds: testGames, language: "en-us", market: "US")
 
         // Should have some well-known titles - adjust this list based on stable GamePass games
-        let titles = games.map { $0.title.lowercased() }
+        let titles = games.map { $0.productTitle.lowercased() }
         let hasPopularContent = titles.contains { title in
             title.contains("minecraft") || title.contains("forza") || title.contains("halo") || title.contains("gears")
         }
