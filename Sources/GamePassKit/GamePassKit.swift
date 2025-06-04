@@ -45,24 +45,6 @@ public struct CategoryHeader: Codable, Sendable {
     public let imageUrl: URL
 }
 
-public let countries: [String] = {
-    guard let url = Bundle.module.url(forResource: "countries", withExtension: "plist"),
-          let data = try? Data(contentsOf: url),
-          let decoded = try? PropertyListDecoder().decode([String].self, from: data) else {
-        fatalError("Failed to load or decode countries.plist")
-    }
-    return decoded
-}()
-
-public let languages: [String] = {
-    guard let url = Bundle.module.url(forResource: "languages", withExtension: "plist"),
-          let data = try? Data(contentsOf: url),
-          let decoded = try? PropertyListDecoder().decode([String].self, from: data) else {
-        fatalError("Failed to load or decode countries.plist")
-    }
-    return decoded
-}()
-
 public enum GamePassCatalog {}
 
 // MARK: - API functions
@@ -225,6 +207,28 @@ extension GamePassCatalog {
     public static let kEAPlayTrialConsoleIdentifier = "490f4b6e-a107-4d6a-8398-225ee916e1f2"
     public static let kEAPlayTrialPcIdentifier = "19e5b90a-5a20-4b1d-9dda-6441ca632527"
 
+}
+
+// MARK: - Countries and languages
+
+extension GamePassCatalog {
+    public static let supportedCountries: [String] = {
+        guard let url = Bundle.module.url(forResource: "countries", withExtension: "plist"),
+              let data = try? Data(contentsOf: url),
+              let decoded = try? PropertyListDecoder().decode([String].self, from: data) else {
+            fatalError("Failed to load or decode countries.plist")
+        }
+        return decoded
+    }()
+
+    public static let supportedLanguages: [String] = {
+        guard let url = Bundle.module.url(forResource: "languages", withExtension: "plist"),
+              let data = try? Data(contentsOf: url),
+              let decoded = try? PropertyListDecoder().decode([String].self, from: data) else {
+            fatalError("Failed to load or decode countries.plist")
+        }
+        return decoded
+    }()
 }
 
 // MARK: - Error definitions
