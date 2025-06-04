@@ -45,12 +45,25 @@ public struct CategoryHeader: Codable, Sendable {
     public let imageUrl: URL
 }
 
-public enum GamePassCatalog {}
+public let countries: [String] = {
+    guard let url = Bundle.module.url(forResource: "countries", withExtension: "plist"),
+          let data = try? Data(contentsOf: url),
+          let decoded = try? PropertyListDecoder().decode([String].self, from: data) else {
+        fatalError("Failed to load or decode countries.plist")
+    }
+    return decoded
+}()
 
-public struct GamePassLocale: Sendable, Hashable {
-    public let language: String
-    public let market: String
-}
+public let languages: [String] = {
+    guard let url = Bundle.module.url(forResource: "languages", withExtension: "plist"),
+          let data = try? Data(contentsOf: url),
+          let decoded = try? PropertyListDecoder().decode([String].self, from: data) else {
+        fatalError("Failed to load or decode countries.plist")
+    }
+    return decoded
+}()
+
+public enum GamePassCatalog {}
 
 // MARK: - API functions
 
@@ -211,12 +224,6 @@ extension GamePassCatalog {
     public static let kEAPlayPcIdentifier = "1d33fbb9-b895-4732-a8ca-a55c8b99fa2c"
     public static let kEAPlayTrialConsoleIdentifier = "490f4b6e-a107-4d6a-8398-225ee916e1f2"
     public static let kEAPlayTrialPcIdentifier = "19e5b90a-5a20-4b1d-9dda-6441ca632527"
-    // MARK: - Supported Locales
-
-    public static let kSupportedLocales = [
-        GamePassLocale(language: "en-us", market: "US"), GamePassLocale(language: "de-ch", market: "CH"),
-        GamePassLocale(language: "en-us", market: "CH"),
-    ]
 
 }
 
