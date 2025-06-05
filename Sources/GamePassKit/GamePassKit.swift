@@ -11,7 +11,20 @@ import Logging
 
 // MARK: - API types
 
-public struct Game: Sendable {
+public struct Game: Equatable, Codable, Sendable {
+    
+    public init(productId: String, productTitle: String, productDescription: String?, developerName: String?, publisherName: String?, shortTitle: String?, sortTitle: String?, shortDescription: String?, imageDescriptors: [GamePassImageDescriptor]?) {
+        self.productId = productId
+        self.productTitle = productTitle
+        self.productDescription = productDescription
+        self.developerName = developerName
+        self.publisherName = publisherName
+        self.shortTitle = shortTitle
+        self.sortTitle = sortTitle
+        self.shortDescription = shortDescription
+        self.imageDescriptors = imageDescriptors
+    }
+    
     public let productId: String
     public let productTitle: String
     public let productDescription: String?
@@ -23,7 +36,17 @@ public struct Game: Sendable {
     public let imageDescriptors: [GamePassImageDescriptor]?
 }
 
-public struct GamePassImageDescriptor: Sendable {
+public struct GamePassImageDescriptor: Equatable, Sendable {
+    
+    public init(fileId: String?, height: Int?, width: Int?, uri: String?, imagePurpose: String?, imagePositionInfo: String?) {
+        self.fileId = fileId
+        self.height = height
+        self.width = width
+        self.uri = uri
+        self.imagePurpose = imagePurpose
+        self.imagePositionInfo = imagePositionInfo
+    }
+    
     public let fileId: String?
     public let height: Int?
     public let width: Int?
@@ -32,12 +55,12 @@ public struct GamePassImageDescriptor: Sendable {
     public let imagePositionInfo: String?
 }
 
-public struct GameCollection: Sendable {
+public struct GameCollection: Equatable, Codable, Sendable {
     public let header: CategoryHeader?
     public let games: [String]
 }
 
-public struct CategoryHeader: Codable, Sendable {
+public struct CategoryHeader: Equatable, Codable, Sendable {
     public let siglId: String
     public let title: String
     public let description: String
