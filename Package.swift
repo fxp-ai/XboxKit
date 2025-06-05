@@ -4,7 +4,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "GamePassKit", platforms: [.macOS(.v15)], products: [.library(name: "GamePassKit", targets: ["GamePassKit"])],
+    name: "GamePassKit", platforms: [.macOS(.v15), .iOS(.v18)],
+    products: [.library(name: "GamePassKit", targets: ["GamePassKit"])],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.2.0"),
         .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
