@@ -68,6 +68,44 @@ public struct CategoryHeader: Equatable, Codable, Sendable {
     public let imageUrl: URL
 }
 
+
+// MARK: - Localization Models
+
+public struct Country: Codable, Equatable, Sendable, Hashable {
+    public let code: String      // ISO 2-letter code (e.g., "US")
+    public let name: String      // English name
+    public let code3: String?    // ISO 3-letter code (e.g., "USA")
+    
+    public init(code: String, name: String, code3: String? = nil) {
+        self.code = code
+        self.name = name
+        self.code3 = code3
+    }
+}
+
+public struct Language: Codable, Equatable, Sendable, Hashable {
+    public let locale: String       // Full locale code (e.g., "en-US")
+    public let bcp47: String        // BCP47 tag
+    public let nativeName: String   // Name in native language
+    
+    public init(locale: String, bcp47: String, nativeName: String) {
+        self.locale = locale
+        self.bcp47 = bcp47
+        self.nativeName = nativeName
+    }
+    
+    /// Extract the language code component (e.g., "en" from "en-US")
+    public var languageCode: String {
+        locale.split(separator: "-").first.map(String.init) ?? locale
+    }
+    
+    /// Extract the region code component (e.g., "US" from "en-US")
+    public var regionCode: String? {
+        let components = locale.split(separator: "-")
+        return components.count > 1 ? String(components.last!) : nil
+    }
+}
+
 public enum GamePassCatalog {}
 
 // MARK: - API functions
@@ -232,26 +270,97 @@ extension GamePassCatalog {
 
 }
 
-// MARK: - Countries and languages
+// MARK: - GamePassCatalog Localization
 
 extension GamePassCatalog {
-    public static let supportedCountries: [String] = {
-        guard let url = Bundle.module.url(forResource: "countries", withExtension: "plist"),
-              let data = try? Data(contentsOf: url),
-              let decoded = try? PropertyListDecoder().decode([String].self, from: data) else {
-            fatalError("Failed to load or decode countries.plist")
+    
+    public enum Localization {
+        
+        // MARK: - Data
+        
+        /// All supported countries
+        public static let countries: [Country] = loadCountries()
+        
+        /// All supported languages
+        public static let languages: [Language] = loadLanguages()
+        
+        /// Set of supported country codes for fast lookup
+        public static let countryCodes: Set<String> = Set(countries.map { $0.code })
+        
+        /// Set of supported locale codes for fast lookup
+        public static let localeCodes: Set<String> = Set(languages.map { $0.locale })
+        
+        // MARK: - Lookups
+        
+        /// Find a country by its ISO code
+        public static func country(_ code: String) -> Country? {
+            countries.first { $0.code.caseInsensitiveCompare(code) == .orderedSame }
         }
-        return decoded
-    }()
-
-    public static let supportedLanguages: [String] = {
-        guard let url = Bundle.module.url(forResource: "languages", withExtension: "plist"),
-              let data = try? Data(contentsOf: url),
-              let decoded = try? PropertyListDecoder().decode([String].self, from: data) else {
-            fatalError("Failed to load or decode countries.plist")
+        
+        /// Find a language by its locale code
+        public static func language(_ locale: String) -> Language? {
+            languages.first { $0.locale.caseInsensitiveCompare(locale) == .orderedSame }
         }
-        return decoded
-    }()
+        
+        /// Get all languages available in a specific country
+        public static func languages(in countryCode: String) -> [Language] {
+            let upperCode = countryCode.uppercased()
+            return languages.filter { $0.regionCode?.uppercased() == upperCode }
+        }
+        
+        /// Get all countries where a specific language is spoken
+        public static func countries(speaking languageCode: String) -> [Country] {
+            let lowerCode = languageCode.lowercased()
+            let matchingLocales = languages
+                .filter { $0.languageCode.lowercased() == lowerCode }
+                .compactMap { $0.regionCode }
+            
+            return countries.filter { country in
+                matchingLocales.contains { $0.caseInsensitiveCompare(country.code) == .orderedSame }
+            }
+        }
+        
+        /// Check if a country is supported
+        public static func isSupported(country: String) -> Bool {
+            countryCodes.contains(country.uppercased())
+        }
+        
+        /// Check if a language locale is supported
+        public static func isSupported(locale: String) -> Bool {
+            localeCodes.contains { $0.caseInsensitiveCompare(locale) == .orderedSame }
+        }
+        
+        /// Get default language for a country (first available)
+        public static func defaultLanguage(for countryCode: String) -> Language? {
+            languages(in: countryCode).first
+        }
+        
+        // MARK: - Private Loading
+        
+        private static func loadCountries() -> [Country] {
+            guard let url = Bundle.module.url(forResource: "country-data", withExtension: "plist"),
+                  let data = try? Data(contentsOf: url),
+                  let items = try? PropertyListDecoder().decode([CountryData].self, from: data) else {
+                fatalError("Failed to load country-data.plist from bundle")
+            }
+            
+            return items.map { item in
+                Country(code: item.isoCode, name: item.name, code3: item.threeLetterISO)
+            }.sorted { $0.code < $1.code }
+        }
+        
+        private static func loadLanguages() -> [Language] {
+            guard let url = Bundle.module.url(forResource: "language-data", withExtension: "plist"),
+                  let data = try? Data(contentsOf: url),
+                  let items = try? PropertyListDecoder().decode([LanguageData].self, from: data) else {
+                fatalError("Failed to load language-data.plist from bundle")
+            }
+            
+            return items.map { item in
+                Language(locale: item.localeCode, bcp47: item.bcp47Tag, nativeName: item.nativeName)
+            }.sorted { $0.locale < $1.locale }
+        }
+    }
 }
 
 // MARK: - Error definitions
@@ -325,5 +434,28 @@ extension GamePassImageDescriptor: Codable {
         case uri = "Uri"
         case imagePurpose = "ImagePurpose"
         case imagePositionInfo = "ImagePositionInfo"
+    }
+}
+
+// MARK: - Private Decoding Types
+
+private struct CountryData: Codable {
+    let isoCode: String
+    let name: String
+    let threeLetterISO: String?
+}
+
+private struct LanguageData: Codable {
+    let localeCode: String
+    let bcp47Tag: String
+    let nativeName: String
+}
+
+// MARK: - Convenience Extensions
+
+extension GamePassCatalog {
+    /// Quick access to check if a market/language combination is valid
+    public static func isValidMarket(_ market: String, language: String) -> Bool {
+        Localization.isSupported(country: market) && Localization.isSupported(locale: language)
     }
 }

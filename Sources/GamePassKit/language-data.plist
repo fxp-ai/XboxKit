@@ -1,0 +1,2774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>af-NA</string>
+		<key>localeCode</key>
+		<string>af-na</string>
+		<key>nativeName</key>
+		<string>Afrikaans (Namibië)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>af-ZA</string>
+		<key>localeCode</key>
+		<string>af-za</string>
+		<key>nativeName</key>
+		<string>Afrikaans (Suid-Afrika)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>am-ET</string>
+		<key>localeCode</key>
+		<string>am-et</string>
+		<key>nativeName</key>
+		<string>አማርኛ (ኢትዮጵያ)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-001</string>
+		<key>localeCode</key>
+		<string>ar-001</string>
+		<key>nativeName</key>
+		<string>العربية (العالم)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-AE</string>
+		<key>localeCode</key>
+		<string>ar-ae</string>
+		<key>nativeName</key>
+		<string>العربية (الإمارات العربية المتحدة)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-BH</string>
+		<key>localeCode</key>
+		<string>ar-bh</string>
+		<key>nativeName</key>
+		<string>العربية (البحرين)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-DJ</string>
+		<key>localeCode</key>
+		<string>ar-dj</string>
+		<key>nativeName</key>
+		<string>العربية (جيبوتي)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-DZ</string>
+		<key>localeCode</key>
+		<string>ar-dz</string>
+		<key>nativeName</key>
+		<string>العربية (الجزائر)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-EG</string>
+		<key>localeCode</key>
+		<string>ar-eg</string>
+		<key>nativeName</key>
+		<string>العربية (مصر)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-ER</string>
+		<key>localeCode</key>
+		<string>ar-er</string>
+		<key>nativeName</key>
+		<string>العربية (إريتريا)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-IL</string>
+		<key>localeCode</key>
+		<string>ar-il</string>
+		<key>nativeName</key>
+		<string>العربية (إسرائيل)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-IQ</string>
+		<key>localeCode</key>
+		<string>ar-iq</string>
+		<key>nativeName</key>
+		<string>العربية (العراق)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-JO</string>
+		<key>localeCode</key>
+		<string>ar-jo</string>
+		<key>nativeName</key>
+		<string>العربية (الأردن)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-KM</string>
+		<key>localeCode</key>
+		<string>ar-km</string>
+		<key>nativeName</key>
+		<string>العربية (جزر القمر)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-KW</string>
+		<key>localeCode</key>
+		<string>ar-kw</string>
+		<key>nativeName</key>
+		<string>العربية (الكويت)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-LB</string>
+		<key>localeCode</key>
+		<string>ar-lb</string>
+		<key>nativeName</key>
+		<string>العربية (لبنان)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-LY</string>
+		<key>localeCode</key>
+		<string>ar-ly</string>
+		<key>nativeName</key>
+		<string>العربية (ليبيا)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-MA</string>
+		<key>localeCode</key>
+		<string>ar-ma</string>
+		<key>nativeName</key>
+		<string>العربية (المملكة المغربية)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-MR</string>
+		<key>localeCode</key>
+		<string>ar-mr</string>
+		<key>nativeName</key>
+		<string>العربية (موريتانيا)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-OM</string>
+		<key>localeCode</key>
+		<string>ar-om</string>
+		<key>nativeName</key>
+		<string>العربية (عمان)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-PS</string>
+		<key>localeCode</key>
+		<string>ar-ps</string>
+		<key>nativeName</key>
+		<string>العربية (السلطة الفلسطينية)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-QA</string>
+		<key>localeCode</key>
+		<string>ar-qa</string>
+		<key>nativeName</key>
+		<string>العربية (قطر)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-SA</string>
+		<key>localeCode</key>
+		<string>ar-sa</string>
+		<key>nativeName</key>
+		<string>العربية (المملكة العربية السعودية)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-SD</string>
+		<key>localeCode</key>
+		<string>ar-sd</string>
+		<key>nativeName</key>
+		<string>العربية (السودان)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-SO</string>
+		<key>localeCode</key>
+		<string>ar-so</string>
+		<key>nativeName</key>
+		<string>العربية (الصومال)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-SS</string>
+		<key>localeCode</key>
+		<string>ar-ss</string>
+		<key>nativeName</key>
+		<string>العربية (جنوب السودان)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-SY</string>
+		<key>localeCode</key>
+		<string>ar-sy</string>
+		<key>nativeName</key>
+		<string>العربية (سوريا)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-TD</string>
+		<key>localeCode</key>
+		<string>ar-td</string>
+		<key>nativeName</key>
+		<string>العربية (تشاد)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-TN</string>
+		<key>localeCode</key>
+		<string>ar-tn</string>
+		<key>nativeName</key>
+		<string>العربية (تونس)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ar-YE</string>
+		<key>localeCode</key>
+		<string>ar-ye</string>
+		<key>nativeName</key>
+		<string>العربية (اليمن)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>as-IN</string>
+		<key>localeCode</key>
+		<string>as-in</string>
+		<key>nativeName</key>
+		<string>অসমীয়া (ভাৰত)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>az-Latn-AZ</string>
+		<key>localeCode</key>
+		<string>az-latn-az</string>
+		<key>nativeName</key>
+		<string>azərbaycan (Azərbaycan)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>be-BY</string>
+		<key>localeCode</key>
+		<string>be-by</string>
+		<key>nativeName</key>
+		<string>Беларуская (Беларусь)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>bg-BG</string>
+		<key>localeCode</key>
+		<string>bg-bg</string>
+		<key>nativeName</key>
+		<string>български (България)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>bn-BD</string>
+		<key>localeCode</key>
+		<string>bn-bd</string>
+		<key>nativeName</key>
+		<string>বাংলা (বাংলাদেশ)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>bn-IN</string>
+		<key>localeCode</key>
+		<string>bn-in</string>
+		<key>nativeName</key>
+		<string>বাংলা (ভারত)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>bs-Latn-BA</string>
+		<key>localeCode</key>
+		<string>bs-latn-ba</string>
+		<key>nativeName</key>
+		<string>bosanski (Bosna i Hercegovina)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ca-AD</string>
+		<key>localeCode</key>
+		<string>ca-ad</string>
+		<key>nativeName</key>
+		<string>català (Andorra)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ca-ES</string>
+		<key>localeCode</key>
+		<string>ca-es</string>
+		<key>nativeName</key>
+		<string>català (català)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ca-ES-valencia</string>
+		<key>localeCode</key>
+		<string>ca-es-valencia</string>
+		<key>nativeName</key>
+		<string>valencià (Espanya)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ca-FR</string>
+		<key>localeCode</key>
+		<string>ca-fr</string>
+		<key>nativeName</key>
+		<string>català (França)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ca-IT</string>
+		<key>localeCode</key>
+		<string>ca-it</string>
+		<key>nativeName</key>
+		<string>català (Itàlia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>cs-CZ</string>
+		<key>localeCode</key>
+		<string>cs-cz</string>
+		<key>nativeName</key>
+		<string>čeština (Česko)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>cy-GB</string>
+		<key>localeCode</key>
+		<string>cy-gb</string>
+		<key>nativeName</key>
+		<string>Cymraeg (Y Deyrnas Unedig)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>da-DK</string>
+		<key>localeCode</key>
+		<string>da-dk</string>
+		<key>nativeName</key>
+		<string>dansk (Danmark)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>da-GL</string>
+		<key>localeCode</key>
+		<string>da-gl</string>
+		<key>nativeName</key>
+		<string>dansk (Grønland)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>de-AT</string>
+		<key>localeCode</key>
+		<string>de-at</string>
+		<key>nativeName</key>
+		<string>Deutsch (Österreich)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>de-BE</string>
+		<key>localeCode</key>
+		<string>de-be</string>
+		<key>nativeName</key>
+		<string>Deutsch (Belgien)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>de-CH</string>
+		<key>localeCode</key>
+		<string>de-ch</string>
+		<key>nativeName</key>
+		<string>Deutsch (Schweiz)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>de-DE</string>
+		<key>localeCode</key>
+		<string>de-de</string>
+		<key>nativeName</key>
+		<string>Deutsch (Deutschland)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>de-IT</string>
+		<key>localeCode</key>
+		<string>de-it</string>
+		<key>nativeName</key>
+		<string>Deutsch (Italien)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>de-LI</string>
+		<key>localeCode</key>
+		<string>de-li</string>
+		<key>nativeName</key>
+		<string>Deutsch (Liechtenstein)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>de-LU</string>
+		<key>localeCode</key>
+		<string>de-lu</string>
+		<key>nativeName</key>
+		<string>Deutsch (Luxemburg)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>el-CY</string>
+		<key>localeCode</key>
+		<string>el-cy</string>
+		<key>nativeName</key>
+		<string>Ελληνικά (Κύπρος)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>el-GR</string>
+		<key>localeCode</key>
+		<string>el-gr</string>
+		<key>nativeName</key>
+		<string>Ελληνικά (Ελλάδα)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-001</string>
+		<key>localeCode</key>
+		<string>en-001</string>
+		<key>nativeName</key>
+		<string>English (World)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-029</string>
+		<key>localeCode</key>
+		<string>en-029</string>
+		<key>nativeName</key>
+		<string>English (Caribbean)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-150</string>
+		<key>localeCode</key>
+		<string>en-150</string>
+		<key>nativeName</key>
+		<string>English (Europe)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-AG</string>
+		<key>localeCode</key>
+		<string>en-ag</string>
+		<key>nativeName</key>
+		<string>English (Antigua and Barbuda)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-AI</string>
+		<key>localeCode</key>
+		<string>en-ai</string>
+		<key>nativeName</key>
+		<string>English (Anguilla)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-AS</string>
+		<key>localeCode</key>
+		<string>en-as</string>
+		<key>nativeName</key>
+		<string>English (American Samoa)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-AT</string>
+		<key>localeCode</key>
+		<string>en-at</string>
+		<key>nativeName</key>
+		<string>English (Austria)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-AU</string>
+		<key>localeCode</key>
+		<string>en-au</string>
+		<key>nativeName</key>
+		<string>English (Australia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-BB</string>
+		<key>localeCode</key>
+		<string>en-bb</string>
+		<key>nativeName</key>
+		<string>English (Barbados)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-BE</string>
+		<key>localeCode</key>
+		<string>en-be</string>
+		<key>nativeName</key>
+		<string>English (Belgium)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-BI</string>
+		<key>localeCode</key>
+		<string>en-bi</string>
+		<key>nativeName</key>
+		<string>English (Burundi)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-BM</string>
+		<key>localeCode</key>
+		<string>en-bm</string>
+		<key>nativeName</key>
+		<string>English (Bermuda)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-BS</string>
+		<key>localeCode</key>
+		<string>en-bs</string>
+		<key>nativeName</key>
+		<string>English (Bahamas)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-BW</string>
+		<key>localeCode</key>
+		<string>en-bw</string>
+		<key>nativeName</key>
+		<string>English (Botswana)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-BZ</string>
+		<key>localeCode</key>
+		<string>en-bz</string>
+		<key>nativeName</key>
+		<string>English (Belize)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-CA</string>
+		<key>localeCode</key>
+		<string>en-ca</string>
+		<key>nativeName</key>
+		<string>English (Canada)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-CC</string>
+		<key>localeCode</key>
+		<string>en-cc</string>
+		<key>nativeName</key>
+		<string>English (Cocos (Keeling) Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-CH</string>
+		<key>localeCode</key>
+		<string>en-ch</string>
+		<key>nativeName</key>
+		<string>English (Switzerland)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-CK</string>
+		<key>localeCode</key>
+		<string>en-ck</string>
+		<key>nativeName</key>
+		<string>English (Cook Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-CM</string>
+		<key>localeCode</key>
+		<string>en-cm</string>
+		<key>nativeName</key>
+		<string>English (Cameroon)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-CX</string>
+		<key>localeCode</key>
+		<string>en-cx</string>
+		<key>nativeName</key>
+		<string>English (Christmas Island)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-CY</string>
+		<key>localeCode</key>
+		<string>en-cy</string>
+		<key>nativeName</key>
+		<string>English (Cyprus)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-DE</string>
+		<key>localeCode</key>
+		<string>en-de</string>
+		<key>nativeName</key>
+		<string>English (Germany)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-DK</string>
+		<key>localeCode</key>
+		<string>en-dk</string>
+		<key>nativeName</key>
+		<string>English (Denmark)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-DM</string>
+		<key>localeCode</key>
+		<string>en-dm</string>
+		<key>nativeName</key>
+		<string>English (Dominica)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-ER</string>
+		<key>localeCode</key>
+		<string>en-er</string>
+		<key>nativeName</key>
+		<string>English (Eritrea)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-FI</string>
+		<key>localeCode</key>
+		<string>en-fi</string>
+		<key>nativeName</key>
+		<string>English (Finland)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-FJ</string>
+		<key>localeCode</key>
+		<string>en-fj</string>
+		<key>nativeName</key>
+		<string>English (Fiji)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-FK</string>
+		<key>localeCode</key>
+		<string>en-fk</string>
+		<key>nativeName</key>
+		<string>English (Falkland Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-FM</string>
+		<key>localeCode</key>
+		<string>en-fm</string>
+		<key>nativeName</key>
+		<string>English (Micronesia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-GB</string>
+		<key>localeCode</key>
+		<string>en-gb</string>
+		<key>nativeName</key>
+		<string>English (United Kingdom)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-GD</string>
+		<key>localeCode</key>
+		<string>en-gd</string>
+		<key>nativeName</key>
+		<string>English (Grenada)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-GG</string>
+		<key>localeCode</key>
+		<string>en-gg</string>
+		<key>nativeName</key>
+		<string>English (Guernsey)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-GH</string>
+		<key>localeCode</key>
+		<string>en-gh</string>
+		<key>nativeName</key>
+		<string>English (Ghana)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-GI</string>
+		<key>localeCode</key>
+		<string>en-gi</string>
+		<key>nativeName</key>
+		<string>English (Gibraltar)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-GM</string>
+		<key>localeCode</key>
+		<string>en-gm</string>
+		<key>nativeName</key>
+		<string>English (Gambia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-GU</string>
+		<key>localeCode</key>
+		<string>en-gu</string>
+		<key>nativeName</key>
+		<string>English (Guam)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-GY</string>
+		<key>localeCode</key>
+		<string>en-gy</string>
+		<key>nativeName</key>
+		<string>English (Guyana)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-ID</string>
+		<key>localeCode</key>
+		<string>en-id</string>
+		<key>nativeName</key>
+		<string>English (Indonesia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-IE</string>
+		<key>localeCode</key>
+		<string>en-ie</string>
+		<key>nativeName</key>
+		<string>English (Ireland)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-IL</string>
+		<key>localeCode</key>
+		<string>en-il</string>
+		<key>nativeName</key>
+		<string>English (Israel)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-IM</string>
+		<key>localeCode</key>
+		<string>en-im</string>
+		<key>nativeName</key>
+		<string>English (Isle of Man)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-IN</string>
+		<key>localeCode</key>
+		<string>en-in</string>
+		<key>nativeName</key>
+		<string>English (India)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-IO</string>
+		<key>localeCode</key>
+		<string>en-io</string>
+		<key>nativeName</key>
+		<string>English (British Indian Ocean Territory)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-JE</string>
+		<key>localeCode</key>
+		<string>en-je</string>
+		<key>nativeName</key>
+		<string>English (Jersey)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-JM</string>
+		<key>localeCode</key>
+		<string>en-jm</string>
+		<key>nativeName</key>
+		<string>English (Jamaica)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-KE</string>
+		<key>localeCode</key>
+		<string>en-ke</string>
+		<key>nativeName</key>
+		<string>English (Kenya)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-KI</string>
+		<key>localeCode</key>
+		<string>en-ki</string>
+		<key>nativeName</key>
+		<string>English (Kiribati)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-KN</string>
+		<key>localeCode</key>
+		<string>en-kn</string>
+		<key>nativeName</key>
+		<string>English (Saint Kitts and Nevis)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-KY</string>
+		<key>localeCode</key>
+		<string>en-ky</string>
+		<key>nativeName</key>
+		<string>English (Cayman Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-LC</string>
+		<key>localeCode</key>
+		<string>en-lc</string>
+		<key>nativeName</key>
+		<string>English (Saint Lucia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-LR</string>
+		<key>localeCode</key>
+		<string>en-lr</string>
+		<key>nativeName</key>
+		<string>English (Liberia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-LS</string>
+		<key>localeCode</key>
+		<string>en-ls</string>
+		<key>nativeName</key>
+		<string>English (Lesotho)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-MG</string>
+		<key>localeCode</key>
+		<string>en-mg</string>
+		<key>nativeName</key>
+		<string>English (Madagascar)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-MH</string>
+		<key>localeCode</key>
+		<string>en-mh</string>
+		<key>nativeName</key>
+		<string>English (Marshall Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-MO</string>
+		<key>localeCode</key>
+		<string>en-mo</string>
+		<key>nativeName</key>
+		<string>English (Macao SAR)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-MP</string>
+		<key>localeCode</key>
+		<string>en-mp</string>
+		<key>nativeName</key>
+		<string>English (Northern Mariana Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-MS</string>
+		<key>localeCode</key>
+		<string>en-ms</string>
+		<key>nativeName</key>
+		<string>English (Montserrat)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-MT</string>
+		<key>localeCode</key>
+		<string>en-mt</string>
+		<key>nativeName</key>
+		<string>English (Malta)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-MU</string>
+		<key>localeCode</key>
+		<string>en-mu</string>
+		<key>nativeName</key>
+		<string>English (Mauritius)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-MW</string>
+		<key>localeCode</key>
+		<string>en-mw</string>
+		<key>nativeName</key>
+		<string>English (Malawi)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-MY</string>
+		<key>localeCode</key>
+		<string>en-my</string>
+		<key>nativeName</key>
+		<string>English (Malaysia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-NA</string>
+		<key>localeCode</key>
+		<string>en-na</string>
+		<key>nativeName</key>
+		<string>English (Namibia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-NF</string>
+		<key>localeCode</key>
+		<string>en-nf</string>
+		<key>nativeName</key>
+		<string>English (Norfolk Island)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-NG</string>
+		<key>localeCode</key>
+		<string>en-ng</string>
+		<key>nativeName</key>
+		<string>English (Nigeria)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-NL</string>
+		<key>localeCode</key>
+		<string>en-nl</string>
+		<key>nativeName</key>
+		<string>English (Netherlands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-NR</string>
+		<key>localeCode</key>
+		<string>en-nr</string>
+		<key>nativeName</key>
+		<string>English (Nauru)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-NU</string>
+		<key>localeCode</key>
+		<string>en-nu</string>
+		<key>nativeName</key>
+		<string>English (Niue)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-NZ</string>
+		<key>localeCode</key>
+		<string>en-nz</string>
+		<key>nativeName</key>
+		<string>English (New Zealand)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-PG</string>
+		<key>localeCode</key>
+		<string>en-pg</string>
+		<key>nativeName</key>
+		<string>English (Papua New Guinea)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-PH</string>
+		<key>localeCode</key>
+		<string>en-ph</string>
+		<key>nativeName</key>
+		<string>English (Philippines)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-PK</string>
+		<key>localeCode</key>
+		<string>en-pk</string>
+		<key>nativeName</key>
+		<string>English (Pakistan)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-PN</string>
+		<key>localeCode</key>
+		<string>en-pn</string>
+		<key>nativeName</key>
+		<string>English (Pitcairn Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-PR</string>
+		<key>localeCode</key>
+		<string>en-pr</string>
+		<key>nativeName</key>
+		<string>English (Puerto Rico)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-PW</string>
+		<key>localeCode</key>
+		<string>en-pw</string>
+		<key>nativeName</key>
+		<string>English (Palau)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-RW</string>
+		<key>localeCode</key>
+		<string>en-rw</string>
+		<key>nativeName</key>
+		<string>English (Rwanda)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SB</string>
+		<key>localeCode</key>
+		<string>en-sb</string>
+		<key>nativeName</key>
+		<string>English (Solomon Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SC</string>
+		<key>localeCode</key>
+		<string>en-sc</string>
+		<key>nativeName</key>
+		<string>English (Seychelles)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SD</string>
+		<key>localeCode</key>
+		<string>en-sd</string>
+		<key>nativeName</key>
+		<string>English (Sudan)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SE</string>
+		<key>localeCode</key>
+		<string>en-se</string>
+		<key>nativeName</key>
+		<string>English (Sweden)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SG</string>
+		<key>localeCode</key>
+		<string>en-sg</string>
+		<key>nativeName</key>
+		<string>English (Singapore)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SH</string>
+		<key>localeCode</key>
+		<string>en-sh</string>
+		<key>nativeName</key>
+		<string>English (St Helena, Ascension, Tristan da Cunha)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SI</string>
+		<key>localeCode</key>
+		<string>en-si</string>
+		<key>nativeName</key>
+		<string>English (Slovenia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SL</string>
+		<key>localeCode</key>
+		<string>en-sl</string>
+		<key>nativeName</key>
+		<string>English (Sierra Leone)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SS</string>
+		<key>localeCode</key>
+		<string>en-ss</string>
+		<key>nativeName</key>
+		<string>English (South Sudan)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SX</string>
+		<key>localeCode</key>
+		<string>en-sx</string>
+		<key>nativeName</key>
+		<string>English (Sint Maarten)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-SZ</string>
+		<key>localeCode</key>
+		<string>en-sz</string>
+		<key>nativeName</key>
+		<string>English (Swaziland)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-TC</string>
+		<key>localeCode</key>
+		<string>en-tc</string>
+		<key>nativeName</key>
+		<string>English (Turks and Caicos Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-TK</string>
+		<key>localeCode</key>
+		<string>en-tk</string>
+		<key>nativeName</key>
+		<string>English (Tokelau)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-TO</string>
+		<key>localeCode</key>
+		<string>en-to</string>
+		<key>nativeName</key>
+		<string>English (Tonga)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-TT</string>
+		<key>localeCode</key>
+		<string>en-tt</string>
+		<key>nativeName</key>
+		<string>English (Trinidad and Tobago)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-TV</string>
+		<key>localeCode</key>
+		<string>en-tv</string>
+		<key>nativeName</key>
+		<string>English (Tuvalu)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-TZ</string>
+		<key>localeCode</key>
+		<string>en-tz</string>
+		<key>nativeName</key>
+		<string>English (Tanzania)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-UG</string>
+		<key>localeCode</key>
+		<string>en-ug</string>
+		<key>nativeName</key>
+		<string>English (Uganda)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-UM</string>
+		<key>localeCode</key>
+		<string>en-um</string>
+		<key>nativeName</key>
+		<string>English (U.S. Outlying Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-US</string>
+		<key>localeCode</key>
+		<string>en-us</string>
+		<key>nativeName</key>
+		<string>English (United States)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-VC</string>
+		<key>localeCode</key>
+		<string>en-vc</string>
+		<key>nativeName</key>
+		<string>English (Saint Vincent and the Grenadines)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-VG</string>
+		<key>localeCode</key>
+		<string>en-vg</string>
+		<key>nativeName</key>
+		<string>English (British Virgin Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-VI</string>
+		<key>localeCode</key>
+		<string>en-vi</string>
+		<key>nativeName</key>
+		<string>English (U.S. Virgin Islands)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-VU</string>
+		<key>localeCode</key>
+		<string>en-vu</string>
+		<key>nativeName</key>
+		<string>English (Vanuatu)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-WS</string>
+		<key>localeCode</key>
+		<string>en-ws</string>
+		<key>nativeName</key>
+		<string>English (Samoa)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-ZA</string>
+		<key>localeCode</key>
+		<string>en-za</string>
+		<key>nativeName</key>
+		<string>English (South Africa)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-ZM</string>
+		<key>localeCode</key>
+		<string>en-zm</string>
+		<key>nativeName</key>
+		<string>English (Zambia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>en-ZW</string>
+		<key>localeCode</key>
+		<string>en-zw</string>
+		<key>nativeName</key>
+		<string>English (Zimbabwe)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-AR</string>
+		<key>localeCode</key>
+		<string>es-ar</string>
+		<key>nativeName</key>
+		<string>español (Argentina)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-BO</string>
+		<key>localeCode</key>
+		<string>es-bo</string>
+		<key>nativeName</key>
+		<string>español (Bolivia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-BR</string>
+		<key>localeCode</key>
+		<string>es-br</string>
+		<key>nativeName</key>
+		<string>español (Brasil)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-BZ</string>
+		<key>localeCode</key>
+		<string>es-bz</string>
+		<key>nativeName</key>
+		<string>español (Belice)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-CL</string>
+		<key>localeCode</key>
+		<string>es-cl</string>
+		<key>nativeName</key>
+		<string>español (Chile)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-CO</string>
+		<key>localeCode</key>
+		<string>es-co</string>
+		<key>nativeName</key>
+		<string>español (Colombia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-CR</string>
+		<key>localeCode</key>
+		<string>es-cr</string>
+		<key>nativeName</key>
+		<string>español (Costa Rica)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-CU</string>
+		<key>localeCode</key>
+		<string>es-cu</string>
+		<key>nativeName</key>
+		<string>español (Cuba)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-DO</string>
+		<key>localeCode</key>
+		<string>es-do</string>
+		<key>nativeName</key>
+		<string>español (República Dominicana)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-EC</string>
+		<key>localeCode</key>
+		<string>es-ec</string>
+		<key>nativeName</key>
+		<string>español (Ecuador)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-ES</string>
+		<key>localeCode</key>
+		<string>es-es</string>
+		<key>nativeName</key>
+		<string>español (España, alfabetización internacional)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-GQ</string>
+		<key>localeCode</key>
+		<string>es-gq</string>
+		<key>nativeName</key>
+		<string>español (Guinea Ecuatorial)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-GT</string>
+		<key>localeCode</key>
+		<string>es-gt</string>
+		<key>nativeName</key>
+		<string>español (Guatemala)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-HN</string>
+		<key>localeCode</key>
+		<string>es-hn</string>
+		<key>nativeName</key>
+		<string>español (Honduras)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-MX</string>
+		<key>localeCode</key>
+		<string>es-mx</string>
+		<key>nativeName</key>
+		<string>español (México)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-NI</string>
+		<key>localeCode</key>
+		<string>es-ni</string>
+		<key>nativeName</key>
+		<string>español (Nicaragua)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-PA</string>
+		<key>localeCode</key>
+		<string>es-pa</string>
+		<key>nativeName</key>
+		<string>español (Panamá)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-PE</string>
+		<key>localeCode</key>
+		<string>es-pe</string>
+		<key>nativeName</key>
+		<string>español (Perú)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-PH</string>
+		<key>localeCode</key>
+		<string>es-ph</string>
+		<key>nativeName</key>
+		<string>español (Filipinas)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-PR</string>
+		<key>localeCode</key>
+		<string>es-pr</string>
+		<key>nativeName</key>
+		<string>español (Puerto Rico)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-PY</string>
+		<key>localeCode</key>
+		<string>es-py</string>
+		<key>nativeName</key>
+		<string>español (Paraguay)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-SV</string>
+		<key>localeCode</key>
+		<string>es-sv</string>
+		<key>nativeName</key>
+		<string>español (El Salvador)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-US</string>
+		<key>localeCode</key>
+		<string>es-us</string>
+		<key>nativeName</key>
+		<string>español (Estados Unidos)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-UY</string>
+		<key>localeCode</key>
+		<string>es-uy</string>
+		<key>nativeName</key>
+		<string>español (Uruguay)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>es-VE</string>
+		<key>localeCode</key>
+		<string>es-ve</string>
+		<key>nativeName</key>
+		<string>español (Venezuela)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>et-EE</string>
+		<key>localeCode</key>
+		<string>et-ee</string>
+		<key>nativeName</key>
+		<string>eesti (Eesti)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>eu-ES</string>
+		<key>localeCode</key>
+		<string>eu-es</string>
+		<key>nativeName</key>
+		<string>euskara (euskara)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fa-IR</string>
+		<key>localeCode</key>
+		<string>fa-ir</string>
+		<key>nativeName</key>
+		<string>فارسی (ایران)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fi-FI</string>
+		<key>localeCode</key>
+		<string>fi-fi</string>
+		<key>nativeName</key>
+		<string>suomi (Suomi)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fil-PH</string>
+		<key>localeCode</key>
+		<string>fil-ph</string>
+		<key>nativeName</key>
+		<string>Filipino (Pilipinas)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-029</string>
+		<key>localeCode</key>
+		<string>fr-029</string>
+		<key>nativeName</key>
+		<string>français (caraïbes)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-BE</string>
+		<key>localeCode</key>
+		<string>fr-be</string>
+		<key>nativeName</key>
+		<string>français (Belgique)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-BF</string>
+		<key>localeCode</key>
+		<string>fr-bf</string>
+		<key>nativeName</key>
+		<string>français (Burkina Faso)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-BI</string>
+		<key>localeCode</key>
+		<string>fr-bi</string>
+		<key>nativeName</key>
+		<string>français (Burundi)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-BJ</string>
+		<key>localeCode</key>
+		<string>fr-bj</string>
+		<key>nativeName</key>
+		<string>français (Bénin)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-BL</string>
+		<key>localeCode</key>
+		<string>fr-bl</string>
+		<key>nativeName</key>
+		<string>français (Saint-Barthélemy)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-CA</string>
+		<key>localeCode</key>
+		<string>fr-ca</string>
+		<key>nativeName</key>
+		<string>français (Canada)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-CF</string>
+		<key>localeCode</key>
+		<string>fr-cf</string>
+		<key>nativeName</key>
+		<string>français (République centrafricaine)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-CG</string>
+		<key>localeCode</key>
+		<string>fr-cg</string>
+		<key>nativeName</key>
+		<string>français (Congo)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-CH</string>
+		<key>localeCode</key>
+		<string>fr-ch</string>
+		<key>nativeName</key>
+		<string>français (Suisse)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-DJ</string>
+		<key>localeCode</key>
+		<string>fr-dj</string>
+		<key>nativeName</key>
+		<string>français (Djibouti)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-DZ</string>
+		<key>localeCode</key>
+		<string>fr-dz</string>
+		<key>nativeName</key>
+		<string>français (Algérie)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-FR</string>
+		<key>localeCode</key>
+		<string>fr-fr</string>
+		<key>nativeName</key>
+		<string>français (France)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-GA</string>
+		<key>localeCode</key>
+		<string>fr-ga</string>
+		<key>nativeName</key>
+		<string>français (Gabon)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-GF</string>
+		<key>localeCode</key>
+		<string>fr-gf</string>
+		<key>nativeName</key>
+		<string>français (Guyane française)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-GN</string>
+		<key>localeCode</key>
+		<string>fr-gn</string>
+		<key>nativeName</key>
+		<string>français (Guinée)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-GP</string>
+		<key>localeCode</key>
+		<string>fr-gp</string>
+		<key>nativeName</key>
+		<string>français (Guadeloupe)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-GQ</string>
+		<key>localeCode</key>
+		<string>fr-gq</string>
+		<key>nativeName</key>
+		<string>français (Guinée équatoriale)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-KM</string>
+		<key>localeCode</key>
+		<string>fr-km</string>
+		<key>nativeName</key>
+		<string>français (Comores)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-LU</string>
+		<key>localeCode</key>
+		<string>fr-lu</string>
+		<key>nativeName</key>
+		<string>français (Luxembourg)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-MC</string>
+		<key>localeCode</key>
+		<string>fr-mc</string>
+		<key>nativeName</key>
+		<string>français (Monaco)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-MF</string>
+		<key>localeCode</key>
+		<string>fr-mf</string>
+		<key>nativeName</key>
+		<string>français (Saint-Martin)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-MG</string>
+		<key>localeCode</key>
+		<string>fr-mg</string>
+		<key>nativeName</key>
+		<string>français (Madagascar)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-MQ</string>
+		<key>localeCode</key>
+		<string>fr-mq</string>
+		<key>nativeName</key>
+		<string>français (Martinique)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-MR</string>
+		<key>localeCode</key>
+		<string>fr-mr</string>
+		<key>nativeName</key>
+		<string>français (Mauritanie)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-MU</string>
+		<key>localeCode</key>
+		<string>fr-mu</string>
+		<key>nativeName</key>
+		<string>français (Maurice)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-NC</string>
+		<key>localeCode</key>
+		<string>fr-nc</string>
+		<key>nativeName</key>
+		<string>français (Nouvelle-Calédonie)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-NE</string>
+		<key>localeCode</key>
+		<string>fr-ne</string>
+		<key>nativeName</key>
+		<string>français (Niger)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-PF</string>
+		<key>localeCode</key>
+		<string>fr-pf</string>
+		<key>nativeName</key>
+		<string>français (Polynésie française)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-PM</string>
+		<key>localeCode</key>
+		<string>fr-pm</string>
+		<key>nativeName</key>
+		<string>français (Saint-Pierre-et-Miquelon)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-RW</string>
+		<key>localeCode</key>
+		<string>fr-rw</string>
+		<key>nativeName</key>
+		<string>français (Rwanda)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-SC</string>
+		<key>localeCode</key>
+		<string>fr-sc</string>
+		<key>nativeName</key>
+		<string>français (Seychelles)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-SY</string>
+		<key>localeCode</key>
+		<string>fr-sy</string>
+		<key>nativeName</key>
+		<string>français (Syrie)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-TD</string>
+		<key>localeCode</key>
+		<string>fr-td</string>
+		<key>nativeName</key>
+		<string>français (Tchad)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-TG</string>
+		<key>localeCode</key>
+		<string>fr-tg</string>
+		<key>nativeName</key>
+		<string>français (Togo)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-TN</string>
+		<key>localeCode</key>
+		<string>fr-tn</string>
+		<key>nativeName</key>
+		<string>français (Tunisie)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-VU</string>
+		<key>localeCode</key>
+		<string>fr-vu</string>
+		<key>nativeName</key>
+		<string>français (Vanuatu)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-WF</string>
+		<key>localeCode</key>
+		<string>fr-wf</string>
+		<key>nativeName</key>
+		<string>français (Wallis-et-Futuna)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>fr-YT</string>
+		<key>localeCode</key>
+		<string>fr-yt</string>
+		<key>nativeName</key>
+		<string>français (Mayotte)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ga-IE</string>
+		<key>localeCode</key>
+		<string>ga-ie</string>
+		<key>nativeName</key>
+		<string>Gaeilge (Éire)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>gd-GB</string>
+		<key>localeCode</key>
+		<string>gd-gb</string>
+		<key>nativeName</key>
+		<string>Gàidhlig (An Rìoghachd Aonaichte)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>gl-ES</string>
+		<key>localeCode</key>
+		<string>gl-es</string>
+		<key>nativeName</key>
+		<string>galego (galego)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>gu-IN</string>
+		<key>localeCode</key>
+		<string>gu-in</string>
+		<key>nativeName</key>
+		<string>ગુજરાતી (ભારત)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ha-Latn-GH</string>
+		<key>localeCode</key>
+		<string>ha-latn-gh</string>
+		<key>nativeName</key>
+		<string>Hausa (Gana)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ha-Latn-NE</string>
+		<key>localeCode</key>
+		<string>ha-latn-ne</string>
+		<key>nativeName</key>
+		<string>Hausa (Nijar)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ha-Latn-NG</string>
+		<key>localeCode</key>
+		<string>ha-latn-ng</string>
+		<key>nativeName</key>
+		<string>Hausa (Najeriya)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>he-IL</string>
+		<key>localeCode</key>
+		<string>he-il</string>
+		<key>nativeName</key>
+		<string>עברית (ישראל)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>hi-IN</string>
+		<key>localeCode</key>
+		<string>hi-in</string>
+		<key>nativeName</key>
+		<string>हिन्दी (भारत)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>hr-BA</string>
+		<key>localeCode</key>
+		<string>hr-ba</string>
+		<key>nativeName</key>
+		<string>hrvatski (Bosna i Hercegovina)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>hr-HR</string>
+		<key>localeCode</key>
+		<string>hr-hr</string>
+		<key>nativeName</key>
+		<string>hrvatski (Hrvatska)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>hu-HU</string>
+		<key>localeCode</key>
+		<string>hu-hu</string>
+		<key>nativeName</key>
+		<string>magyar (Magyarország)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>hy-AM</string>
+		<key>localeCode</key>
+		<string>hy-am</string>
+		<key>nativeName</key>
+		<string>Հայերեն (Հայաստան)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>id-ID</string>
+		<key>localeCode</key>
+		<string>id-id</string>
+		<key>nativeName</key>
+		<string>Indonesia (Indonesia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>is-IS</string>
+		<key>localeCode</key>
+		<string>is-is</string>
+		<key>nativeName</key>
+		<string>íslenska (Ísland)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>it-CH</string>
+		<key>localeCode</key>
+		<string>it-ch</string>
+		<key>nativeName</key>
+		<string>italiano (Svizzera)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>it-IT</string>
+		<key>localeCode</key>
+		<string>it-it</string>
+		<key>nativeName</key>
+		<string>italiano (Italia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>it-SM</string>
+		<key>localeCode</key>
+		<string>it-sm</string>
+		<key>nativeName</key>
+		<string>italiano (San Marino)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>it-VA</string>
+		<key>localeCode</key>
+		<string>it-va</string>
+		<key>nativeName</key>
+		<string>italiano (Città del Vaticano)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ja-JP</string>
+		<key>localeCode</key>
+		<string>ja-jp</string>
+		<key>nativeName</key>
+		<string>日本語 (日本)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ka-GE</string>
+		<key>localeCode</key>
+		<string>ka-ge</string>
+		<key>nativeName</key>
+		<string>ქართული (საქართველო)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>kk-KZ</string>
+		<key>localeCode</key>
+		<string>kk-kz</string>
+		<key>nativeName</key>
+		<string>қазақ тілі (Қазақстан)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>km-KH</string>
+		<key>localeCode</key>
+		<string>km-kh</string>
+		<key>nativeName</key>
+		<string>ភាសាខ្មែរ (កម្ពុជា)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>kn-IN</string>
+		<key>localeCode</key>
+		<string>kn-in</string>
+		<key>nativeName</key>
+		<string>ಕನ್ನಡ (ಭಾರತ)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ko-KP</string>
+		<key>localeCode</key>
+		<string>ko-kp</string>
+		<key>nativeName</key>
+		<string>한국어 (조선민주주의인민공화국)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ko-KR</string>
+		<key>localeCode</key>
+		<string>ko-kr</string>
+		<key>nativeName</key>
+		<string>한국어(대한민국)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>kok-IN</string>
+		<key>localeCode</key>
+		<string>kok-in</string>
+		<key>nativeName</key>
+		<string>कोंकणी (भारत)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ky-KG</string>
+		<key>localeCode</key>
+		<string>ky-kg</string>
+		<key>nativeName</key>
+		<string>Кыргыз (Кыргызстан)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>lb-LU</string>
+		<key>localeCode</key>
+		<string>lb-lu</string>
+		<key>nativeName</key>
+		<string>Lëtzebuergesch (Lëtzebuerg)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>lo-LA</string>
+		<key>localeCode</key>
+		<string>lo-la</string>
+		<key>nativeName</key>
+		<string>ລາວ (ລາວ)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>lt-LT</string>
+		<key>localeCode</key>
+		<string>lt-lt</string>
+		<key>nativeName</key>
+		<string>lietuvių (Lietuva)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>lv-LV</string>
+		<key>localeCode</key>
+		<string>lv-lv</string>
+		<key>nativeName</key>
+		<string>latviešu (Latvija)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>mi-NZ</string>
+		<key>localeCode</key>
+		<string>mi-nz</string>
+		<key>nativeName</key>
+		<string>te reo Māori (Aotearoa)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>mk-MK</string>
+		<key>localeCode</key>
+		<string>mk-mk</string>
+		<key>nativeName</key>
+		<string>македонски (Република Македонија)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ml-IN</string>
+		<key>localeCode</key>
+		<string>ml-in</string>
+		<key>nativeName</key>
+		<string>മലയാളം (ഇന്ത്യ)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>mn-MN</string>
+		<key>localeCode</key>
+		<string>mn-mn</string>
+		<key>nativeName</key>
+		<string>монгол (Монгол)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>mr-IN</string>
+		<key>localeCode</key>
+		<string>mr-in</string>
+		<key>nativeName</key>
+		<string>मराठी (भारत)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ms-BN</string>
+		<key>localeCode</key>
+		<string>ms-bn</string>
+		<key>nativeName</key>
+		<string>Melayu (Brunei)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ms-MY</string>
+		<key>localeCode</key>
+		<string>ms-my</string>
+		<key>nativeName</key>
+		<string>Melayu (Malaysia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ms-SG</string>
+		<key>localeCode</key>
+		<string>ms-sg</string>
+		<key>nativeName</key>
+		<string>Melayu (Singapura)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>mt-MT</string>
+		<key>localeCode</key>
+		<string>mt-mt</string>
+		<key>nativeName</key>
+		<string>Malti (Malta)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>nb-NO</string>
+		<key>localeCode</key>
+		<string>nb-no</string>
+		<key>nativeName</key>
+		<string>norsk bokmål (Norge)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ne-IN</string>
+		<key>localeCode</key>
+		<string>ne-in</string>
+		<key>nativeName</key>
+		<string>नेपाली (भारत)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ne-NP</string>
+		<key>localeCode</key>
+		<string>ne-np</string>
+		<key>nativeName</key>
+		<string>नेपाली (नेपाल)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>nl-AW</string>
+		<key>localeCode</key>
+		<string>nl-aw</string>
+		<key>nativeName</key>
+		<string>Nederlands (Aruba)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>nl-BE</string>
+		<key>localeCode</key>
+		<string>nl-be</string>
+		<key>nativeName</key>
+		<string>Nederlands (België)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>nl-BQ</string>
+		<key>localeCode</key>
+		<string>nl-bq</string>
+		<key>nativeName</key>
+		<string>Nederlands (Bonaire, Sint Eustatius en Saba)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>nl-CW</string>
+		<key>localeCode</key>
+		<string>nl-cw</string>
+		<key>nativeName</key>
+		<string>Nederlands (Curaçao)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>nl-NL</string>
+		<key>localeCode</key>
+		<string>nl-nl</string>
+		<key>nativeName</key>
+		<string>Nederlands (Nederland)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>nl-SR</string>
+		<key>localeCode</key>
+		<string>nl-sr</string>
+		<key>nativeName</key>
+		<string>Nederlands (Suriname)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>nl-SX</string>
+		<key>localeCode</key>
+		<string>nl-sx</string>
+		<key>nativeName</key>
+		<string>Nederlands (Sint-Maarten)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>nn-NO</string>
+		<key>localeCode</key>
+		<string>nn-no</string>
+		<key>nativeName</key>
+		<string>nynorsk (Noreg)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>or-IN</string>
+		<key>localeCode</key>
+		<string>or-in</string>
+		<key>nativeName</key>
+		<string>ଓଡ଼ିଆ (ଭାରତ)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pa-IN</string>
+		<key>localeCode</key>
+		<string>pa-in</string>
+		<key>nativeName</key>
+		<string>ਪੰਜਾਬੀ (ਭਾਰਤ)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pl-PL</string>
+		<key>localeCode</key>
+		<string>pl-pl</string>
+		<key>nativeName</key>
+		<string>polski (Polska)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>prs-AF</string>
+		<key>localeCode</key>
+		<string>prs-af</string>
+		<key>nativeName</key>
+		<string>درى (افغانستان)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-AO</string>
+		<key>localeCode</key>
+		<string>pt-ao</string>
+		<key>nativeName</key>
+		<string>português (Angola)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-BR</string>
+		<key>localeCode</key>
+		<string>pt-br</string>
+		<key>nativeName</key>
+		<string>português (Brasil)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-CH</string>
+		<key>localeCode</key>
+		<string>pt-ch</string>
+		<key>nativeName</key>
+		<string>português (Suíça)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-CV</string>
+		<key>localeCode</key>
+		<string>pt-cv</string>
+		<key>nativeName</key>
+		<string>português (Cabo Verde)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-GQ</string>
+		<key>localeCode</key>
+		<string>pt-gq</string>
+		<key>nativeName</key>
+		<string>português (Guiné Equatorial)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-GW</string>
+		<key>localeCode</key>
+		<string>pt-gw</string>
+		<key>nativeName</key>
+		<string>português (Guiné-Bissau)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-LU</string>
+		<key>localeCode</key>
+		<string>pt-lu</string>
+		<key>nativeName</key>
+		<string>português (Luxemburgo)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-MO</string>
+		<key>localeCode</key>
+		<string>pt-mo</string>
+		<key>nativeName</key>
+		<string>português (RAE de Macau)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-MZ</string>
+		<key>localeCode</key>
+		<string>pt-mz</string>
+		<key>nativeName</key>
+		<string>português (Moçambique)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-PT</string>
+		<key>localeCode</key>
+		<string>pt-pt</string>
+		<key>nativeName</key>
+		<string>português (Portugal)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-ST</string>
+		<key>localeCode</key>
+		<string>pt-st</string>
+		<key>nativeName</key>
+		<string>português (São Tomé e Príncipe)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>pt-TL</string>
+		<key>localeCode</key>
+		<string>pt-tl</string>
+		<key>nativeName</key>
+		<string>português (Timor-Leste)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>quz-BO</string>
+		<key>localeCode</key>
+		<string>quz-bo</string>
+		<key>nativeName</key>
+		<string>Runasimi (Bolivia)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>quz-EC</string>
+		<key>localeCode</key>
+		<string>quz-ec</string>
+		<key>nativeName</key>
+		<string>Runasimi (Ecuador)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>quz-PE</string>
+		<key>localeCode</key>
+		<string>quz-pe</string>
+		<key>nativeName</key>
+		<string>Runasimi (Perú)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ro-MD</string>
+		<key>localeCode</key>
+		<string>ro-md</string>
+		<key>nativeName</key>
+		<string>română (Republica Moldova)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ro-RO</string>
+		<key>localeCode</key>
+		<string>ro-ro</string>
+		<key>nativeName</key>
+		<string>română (România)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ru-BY</string>
+		<key>localeCode</key>
+		<string>ru-by</string>
+		<key>nativeName</key>
+		<string>русский (Беларусь)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ru-KG</string>
+		<key>localeCode</key>
+		<string>ru-kg</string>
+		<key>nativeName</key>
+		<string>русский (Киргизия)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ru-KZ</string>
+		<key>localeCode</key>
+		<string>ru-kz</string>
+		<key>nativeName</key>
+		<string>русский (Казахстан)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ru-MD</string>
+		<key>localeCode</key>
+		<string>ru-md</string>
+		<key>nativeName</key>
+		<string>русский (Молдова)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ru-RU</string>
+		<key>localeCode</key>
+		<string>ru-ru</string>
+		<key>nativeName</key>
+		<string>русский (Россия)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ru-UA</string>
+		<key>localeCode</key>
+		<string>ru-ua</string>
+		<key>nativeName</key>
+		<string>русский (Украина)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sd-Arab-PK</string>
+		<key>localeCode</key>
+		<string>sd-arab-pk</string>
+		<key>nativeName</key>
+		<string>سنڌي (پاکستان)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>si-LK</string>
+		<key>localeCode</key>
+		<string>si-lk</string>
+		<key>nativeName</key>
+		<string>සිංහල (ශ්‍රී ලංකාව)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sk-SK</string>
+		<key>localeCode</key>
+		<string>sk-sk</string>
+		<key>nativeName</key>
+		<string>slovenčina (Slovensko)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sl-SI</string>
+		<key>localeCode</key>
+		<string>sl-si</string>
+		<key>nativeName</key>
+		<string>slovenščina (Slovenija)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sq-AL</string>
+		<key>localeCode</key>
+		<string>sq-al</string>
+		<key>nativeName</key>
+		<string>shqip (Shqipëri)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sq-MK</string>
+		<key>localeCode</key>
+		<string>sq-mk</string>
+		<key>nativeName</key>
+		<string>shqip (Republika e Maqedonisë)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sq-XK</string>
+		<key>localeCode</key>
+		<string>sq-xk</string>
+		<key>nativeName</key>
+		<string>shqip (Kosovë)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sr-Cyrl-BA</string>
+		<key>localeCode</key>
+		<string>sr-cyrl-ba</string>
+		<key>nativeName</key>
+		<string>српски (Босна и Херцеговина)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sr-Cyrl-XK</string>
+		<key>localeCode</key>
+		<string>sr-cyrl-xk</string>
+		<key>nativeName</key>
+		<string>српски (Косово)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sr-Latn-CS</string>
+		<key>localeCode</key>
+		<string>sr-latn-cs</string>
+		<key>nativeName</key>
+		<string>srpski (Srbija i Crna Gora (Bivša))</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sv-AX</string>
+		<key>localeCode</key>
+		<string>sv-ax</string>
+		<key>nativeName</key>
+		<string>svenska (Åland)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sv-FI</string>
+		<key>localeCode</key>
+		<string>sv-fi</string>
+		<key>nativeName</key>
+		<string>svenska (Finland)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sv-SE</string>
+		<key>localeCode</key>
+		<string>sv-se</string>
+		<key>nativeName</key>
+		<string>svenska (Sverige)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sw-CD</string>
+		<key>localeCode</key>
+		<string>sw-cd</string>
+		<key>nativeName</key>
+		<string>Kiswahili (Jamhuri ya Kidemokrasia ya Kongo)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sw-KE</string>
+		<key>localeCode</key>
+		<string>sw-ke</string>
+		<key>nativeName</key>
+		<string>Kiswahili (Kenya)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sw-TZ</string>
+		<key>localeCode</key>
+		<string>sw-tz</string>
+		<key>nativeName</key>
+		<string>Kiswahili (Tanzania)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>sw-UG</string>
+		<key>localeCode</key>
+		<string>sw-ug</string>
+		<key>nativeName</key>
+		<string>Kiswahili (Uganda)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ta-IN</string>
+		<key>localeCode</key>
+		<string>ta-in</string>
+		<key>nativeName</key>
+		<string>தமிழ் (இந்தியா)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ta-MY</string>
+		<key>localeCode</key>
+		<string>ta-my</string>
+		<key>nativeName</key>
+		<string>தமிழ் (மலேசியா)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ta-SG</string>
+		<key>localeCode</key>
+		<string>ta-sg</string>
+		<key>nativeName</key>
+		<string>தமிழ் (சிங்கப்பூர்)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>te-IN</string>
+		<key>localeCode</key>
+		<string>te-in</string>
+		<key>nativeName</key>
+		<string>తెలుగు (భారత దేశం)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>th-TH</string>
+		<key>localeCode</key>
+		<string>th-th</string>
+		<key>nativeName</key>
+		<string>ไทย (ไทย)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>tk-TM</string>
+		<key>localeCode</key>
+		<string>tk-tm</string>
+		<key>nativeName</key>
+		<string>Türkmen dili (Türkmenistan)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>tr-CY</string>
+		<key>localeCode</key>
+		<string>tr-cy</string>
+		<key>nativeName</key>
+		<string>Türkçe (Kıbrıs)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>tr-TR</string>
+		<key>localeCode</key>
+		<string>tr-tr</string>
+		<key>nativeName</key>
+		<string>Türkçe (Türkiye)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>tt-RU</string>
+		<key>localeCode</key>
+		<string>tt-ru</string>
+		<key>nativeName</key>
+		<string>Татар (Россия)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ug-CN</string>
+		<key>localeCode</key>
+		<string>ug-cn</string>
+		<key>nativeName</key>
+		<string>ئۇيغۇرچە (جۇڭخۇا خەلق جۇمھۇرىيىتى)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>uk-UA</string>
+		<key>localeCode</key>
+		<string>uk-ua</string>
+		<key>nativeName</key>
+		<string>українська (Україна)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ur-IN</string>
+		<key>localeCode</key>
+		<string>ur-in</string>
+		<key>nativeName</key>
+		<string>اردو (بھارت)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>ur-PK</string>
+		<key>localeCode</key>
+		<string>ur-pk</string>
+		<key>nativeName</key>
+		<string>اُردو (پاکستان)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>uz-Latn-UZ</string>
+		<key>localeCode</key>
+		<string>uz-latn-uz</string>
+		<key>nativeName</key>
+		<string>o‘zbek (Oʻzbekiston)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>vi-VN</string>
+		<key>localeCode</key>
+		<string>vi-vn</string>
+		<key>nativeName</key>
+		<string>Tiếng Việt (Việt Nam)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>zh-CN</string>
+		<key>localeCode</key>
+		<string>zh-cn</string>
+		<key>nativeName</key>
+		<string>中文(中国)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>zh-Hans-HK</string>
+		<key>localeCode</key>
+		<string>zh-hans-hk</string>
+		<key>nativeName</key>
+		<string>中文 (香港特别行政区)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>zh-Hans-MO</string>
+		<key>localeCode</key>
+		<string>zh-hans-mo</string>
+		<key>nativeName</key>
+		<string>中文 (澳门特别行政区)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>zh-HK</string>
+		<key>localeCode</key>
+		<string>zh-hk</string>
+		<key>nativeName</key>
+		<string>中文(香港特別行政區)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>zh-MO</string>
+		<key>localeCode</key>
+		<string>zh-mo</string>
+		<key>nativeName</key>
+		<string>中文(澳門特別行政區)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>zh-SG</string>
+		<key>localeCode</key>
+		<string>zh-sg</string>
+		<key>nativeName</key>
+		<string>中文(新加坡)</string>
+	</dict>
+	<dict>
+		<key>bcp47Tag</key>
+		<string>zh-TW</string>
+		<key>localeCode</key>
+		<string>zh-tw</string>
+		<key>nativeName</key>
+		<string>中文(台灣)</string>
+	</dict>
+</array>
+</plist>

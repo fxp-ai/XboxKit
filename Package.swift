@@ -18,6 +18,6 @@ let package = Package(
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
                 .product(name: "Logging", package: "swift-log"),
-            ], resources: [.process("countries.plist"), .process("languages.plist")], ),
+            ], resources: [.process("country-data.plist"), .process("language-data.plist")], ),
         .testTarget(name: "GamePassKitTests", dependencies: [.byName(name: "GamePassKit")]),
     ])
