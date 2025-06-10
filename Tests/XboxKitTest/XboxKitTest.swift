@@ -1,6 +1,6 @@
 //
-//  GamePassKitTest.swift
-//  GamePassKit
+//  XboxKitTest.swift
+//  XboxKit
 //
 //  Created by Felix Pultar on 26.05.2025.
 //
@@ -8,28 +8,32 @@
 import Foundation
 import XCTest
 
-@testable import GamePassKit
+import XboxKit
 
 final class AppTests: XCTestCase {
+    
+    let defaultLanguage = Localization.language("en-US")!
+    let defaultMarket = Localization.market("US")!
+    
     // MARK: - Basic endpoint availability tests
 
     func testFetchGameCollectionReachable() async throws {
         let gameCollection = try await GamePassCatalog.fetchGameCollection(
-            for: GamePassCatalog.kGamePassConsoleIdentifier, language: "en-us", market: "US")
+            for: GamePassCatalog.kGamePassConsoleIdentifier, language: defaultLanguage, market: defaultMarket)
         XCTAssertNotNil(gameCollection, "Game collection should not be nil")
-        XCTAssertFalse(gameCollection.games.isEmpty, "Game collection should contain games")
+        XCTAssertFalse(gameCollection.gameIds.isEmpty, "Game collection should contain games")
     }
 
     func testFetchProductInformationReachable() async throws {
         // First get some game IDs
         let gameCollection = try await GamePassCatalog.fetchGameCollection(
-            for: GamePassCatalog.kGamePassConsoleIdentifier, language: "en-us", market: "US")
+            for: GamePassCatalog.kGamePassConsoleIdentifier, language: defaultLanguage, market: defaultMarket)
 
         // Take first 5 games to avoid overwhelming the API
-        let testGameIds = Array(gameCollection.games.prefix(5))
+        let testGameIds = Array(gameCollection.gameIds.prefix(5))
 
-        let games = try await GamePassCatalog.fetchProductInformation(
-            gameIds: testGameIds, language: "en-us", market: "US")
+        let games = try await XboxMarketplace.fetchProductInformation(
+            gameIds: testGameIds, language: defaultLanguage, market: defaultMarket)
 
         XCTAssertFalse(games.isEmpty, "Should return game information")
         XCTAssertTrue(games.allSatisfy { !$0.productTitle.isEmpty }, "All games should have titles")
@@ -38,13 +42,13 @@ final class AppTests: XCTestCase {
 
     func testGameCollectionResponseStructure() async throws {
         let gameCollection = try await GamePassCatalog.fetchGameCollection(
-            for: GamePassCatalog.kGamePassConsoleIdentifier, language: "en-us", market: "US")
+            for: GamePassCatalog.kGamePassConsoleIdentifier, language: defaultLanguage, market: defaultMarket)
 
         // Test that the response structure is what we expect
-        XCTAssertFalse(gameCollection.games.isEmpty, "Should have games")
+        XCTAssertFalse(gameCollection.gameIds.isEmpty, "Should have games")
 
         // Test game ID format (assuming they're GUIDs)
-        for gameId in gameCollection.games {
+        for gameId in gameCollection.gameIds {
             XCTAssertTrue(isValidMicrosoftProductId(gameId), "Game ID should be valid GUID: \(gameId)")
         }
 
@@ -58,11 +62,11 @@ final class AppTests: XCTestCase {
 
     func testProductInformationResponseStructure() async throws {
         let gameCollection = try await GamePassCatalog.fetchGameCollection(
-            for: GamePassCatalog.kGamePassConsoleIdentifier, language: "en-us", market: "US")
+            for: GamePassCatalog.kGamePassConsoleIdentifier, language: defaultLanguage, market: defaultMarket)
 
-        let testGameIds = Array(gameCollection.games.prefix(3))
-        let games = try await GamePassCatalog.fetchProductInformation(
-            gameIds: testGameIds, language: "en-us", market: "US")
+        let testGameIds = Array(gameCollection.gameIds.prefix(3))
+        let games = try await XboxMarketplace.fetchProductInformation(
+            gameIds: testGameIds, language: defaultLanguage, market: defaultMarket)
 
         for game in games {
             XCTAssertFalse(game.productTitle.isEmpty, "Game title should not be empty")
@@ -79,6 +83,7 @@ final class AppTests: XCTestCase {
     }
 
     private func isValidURL(_ url: URL) -> Bool { return url.scheme == "http" || url.scheme == "https" }
+    
     // MARK: - Comprehensive tests of known identifiers and languages
 
     func testAllKnownCatalogIdentifiers() async throws {
@@ -105,11 +110,11 @@ final class AppTests: XCTestCase {
         for (name, identifier) in identifiers {
             do {
                 let gameCollection = try await GamePassCatalog.fetchGameCollection(
-                    for: identifier, language: "en-us", market: "US")
+                    for: identifier, language: defaultLanguage, market: defaultMarket)
 
                 // Some collections might be empty (like "leaving soon"), that's OK
                 XCTAssertNotNil(gameCollection, "\(name) collection should not be nil")
-                print("✅ \(name): \(gameCollection.games.count) games")
+                print("✅ \(name): \(gameCollection.gameIds.count) games")
 
             } catch { XCTFail("Failed to fetch \(name) collection: \(error)") }
         }
@@ -121,10 +126,10 @@ final class AppTests: XCTestCase {
         for (language, market) in testCases {
             do {
                 let gameCollection = try await GamePassCatalog.fetchGameCollection(
-                    for: GamePassCatalog.kGamePassConsoleIdentifier, language: language, market: market)
+                    for: GamePassCatalog.kGamePassConsoleIdentifier, language: Localization.language(language)!, market: Localization.market(market)!)
 
                 XCTAssertNotNil(gameCollection, "Should work for \(language)/\(market)")
-                print("✅ \(language)/\(market): \(gameCollection.games.count) games")
+                print("✅ \(language)/\(market): \(gameCollection.gameIds.count) games")
 
             } catch {
                 // Log but don't fail - some markets might not be supported
@@ -138,7 +143,7 @@ final class AppTests: XCTestCase {
         let startTime = Date()
 
         _ = try await GamePassCatalog.fetchGameCollection(
-            for: GamePassCatalog.kGamePassConsoleIdentifier, language: "en-us", market: "US")
+            for: GamePassCatalog.kGamePassConsoleIdentifier, language: defaultLanguage, market: defaultMarket)
 
         let responseTime = Date().timeIntervalSince(startTime)
 
@@ -152,16 +157,20 @@ final class AppTests: XCTestCase {
             GamePassCatalog.kGamePassConsoleIdentifier, GamePassCatalog.kGamePassPcIdentifier,
             GamePassCatalog.kConsoleMostPopularIdentifier,
         ]
+        
+        // Capture these values before the task group to avoid the warning
+        let language = defaultLanguage
+        let market = defaultMarket
 
         // Test that we can make concurrent requests without issues
-        try await withThrowingTaskGroup(of: GameCollection.self) { group in
+        try await withThrowingTaskGroup(of: GamePassCollection.self) { group in
             for identifier in identifiers {
                 group.addTask {
-                    try await GamePassCatalog.fetchGameCollection(for: identifier, language: "en-us", market: "US")
+                    try await GamePassCatalog.fetchGameCollection(for: identifier, language: language, market: market)
                 }
             }
 
-            var collections: [GameCollection] = []
+            var collections: [GamePassCollection] = []
             for try await collection in group { collections.append(collection) }
 
             XCTAssertEqual(collections.count, identifiers.count, "All concurrent requests should succeed")
@@ -171,15 +180,15 @@ final class AppTests: XCTestCase {
 
     func testGameCollectionMinimumFields() async throws {
         let gameCollection = try await GamePassCatalog.fetchGameCollection(
-            for: GamePassCatalog.kGamePassConsoleIdentifier, language: "en-us", market: "US")
+            for: GamePassCatalog.kGamePassConsoleIdentifier, language: defaultLanguage, market: defaultMarket)
 
         // Test minimum expected data
-        XCTAssertGreaterThan(gameCollection.games.count, 50, "GamePass should have at least 50 games")
+        XCTAssertGreaterThan(gameCollection.gameIds.count, 50, "GamePass should have at least 50 games")
 
         // Test that we get some popular games (this will break if they remove major titles)
-        let testGames = Array(gameCollection.games)
-        let games = try await GamePassCatalog.fetchProductInformation(
-            gameIds: testGames, language: "en-us", market: "US")
+        let testGames = Array(gameCollection.gameIds)
+        let games = try await XboxMarketplace.fetchProductInformation(
+            gameIds: testGames, language: defaultLanguage, market: defaultMarket)
 
         // Should have some well-known titles - adjust this list based on stable GamePass games
         let titles = games.map { $0.productTitle.lowercased() }
@@ -207,10 +216,10 @@ final class AppTests: XCTestCase {
 
         // First get some real game IDs
         let gameCollection = try await GamePassCatalog.fetchGameCollection(
-            for: GamePassCatalog.kGamePassConsoleIdentifier, language: "en-us", market: "US")
+            for: GamePassCatalog.kGamePassConsoleIdentifier, language: defaultLanguage, market: defaultMarket)
 
         // Test product API with real game IDs
-        let testGameIds = Array(gameCollection.games.prefix(3))
+        let testGameIds = Array(gameCollection.gameIds.prefix(3))
         let productURL = "https://displaycatalog.mp.microsoft.com/v7.0/products"
         let productRequest = URLRequest(
             url: URL(string: "\(productURL)?bigIds=\(testGameIds.joined(separator: ","))&languages=en-us&market=US")!)
