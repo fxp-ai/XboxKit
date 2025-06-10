@@ -47,7 +47,7 @@ public enum Localization {
     // MARK: - Data
     
     /// All supported markets
-    public static let markets: [Market] = loadmarkets()
+    public static let markets: [Market] = loadMarkets()
     
     /// All supported languages
     public static let languages: [Language] = loadLanguages()
@@ -103,7 +103,7 @@ public enum Localization {
     
     // MARK: - Private Loading
     
-    private static func loadmarkets() -> [Market] {
+    private static func loadMarkets() -> [Market] {
         guard let url = Bundle.module.url(forResource: "market-data", withExtension: "plist"),
               let data = try? Data(contentsOf: url),
               let items = try? PropertyListDecoder().decode([Market].self, from: data) else {

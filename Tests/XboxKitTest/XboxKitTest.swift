@@ -16,6 +16,11 @@ final class AppTests: XCTestCase {
     let defaultMarket = Localization.market("US")!
     
     // MARK: - Basic endpoint availability tests
+    
+    func testQueryXboxMarketplace() async throws {
+        let productIds = try await XboxMarketplace.queryXboxMarketplace(query: "Cyberpunk", language: defaultLanguage, market: defaultMarket)
+        XCTAssert(!productIds.isEmpty, "Should find some products")
+    }
 
     func testFetchGameCollectionReachable() async throws {
         let gameCollection = try await GamePassCatalog.fetchGameCollection(

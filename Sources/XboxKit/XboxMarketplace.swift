@@ -64,6 +64,29 @@ public struct XboxImageDescriptor: Equatable, Sendable, Codable {
 }
 
 public enum XboxMarketplace {
+    
+    // MARK: - API functions
+    
+    public static func queryXboxMarketplace(query: String, language: Language, market: Market, session: URLSession = .shared) async throws -> [String] {
+        guard !query.isEmpty else { throw XboxError.invalidInput("Query string must not be empty") }
+        let baseURL = "https://displaycatalog.mp.microsoft.com/v7.0/productFamilies/autosuggest"
+        var components = URLComponents(string: baseURL)
+        components?.queryItems = [
+            URLQueryItem(name: "languages", value: language.localeCode),
+            URLQueryItem(name: "market", value: market.isoCode),
+            URLQueryItem(name: "productFamilyNames", value: "Games"),
+            URLQueryItem(name: "query", value: query),
+        ]
+        
+        guard let url = components?.url else { throw XboxError.invalidURL }
+        
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let decoder = JSONDecoder()
+        let response = try decoder.decode(XboxQueryResponse.self, from: data)
+        let productIds = response.allProducts.compactMap(\.productId)
+        return productIds
+    }
+    
     public static func fetchProductInformation(
         gameIds: [String], language: Language, market: Market, session: URLSession = .shared
     ) async throws -> [XboxGame] {
@@ -116,9 +139,9 @@ public enum XboxMarketplace {
         
         struct XboxProduct: Codable {
             let productId: String
-            let localizedProperties: [GamePassProductLocalizedProperty]
+            let localizedProperties: [XboxProductLocalizedProperty]
             
-            struct GamePassProductLocalizedProperty: Codable {
+            struct XboxProductLocalizedProperty: Codable {
                 let productTitle: String
                 let productDescription: String
                 let developerName: String?
@@ -148,6 +171,57 @@ public enum XboxMarketplace {
 
         enum CodingKeys: String, CodingKey { case products = "Products" }
     }
+    
+    struct XboxQueryResponse: Codable {
+        let results: [XboxQueryResultType]
+        let totalResultCount: Int
+        
+        struct XboxQueryResultType: Codable {
+            let productFamilyName: String
+            let products: [XboxProductType]
+            
+            enum CodingKeys: String, CodingKey {
+                case productFamilyName = "ProductFamilyName"
+                case products = "Products"
+            }
+        }
+        
+        struct XboxProductType: Codable, Identifiable {
+            let backgroundColor: String
+            let height: Int
+            let width: Int
+            let imageType: String
+            let platformProperties: [String]
+            let icon: String
+            let productId: String
+            let type: String
+            let title: String
+            
+            var id: String { productId }
+            
+            enum CodingKeys: String, CodingKey {
+                case backgroundColor = "BackgroundColor"
+                case height = "Height"
+                case width = "Width"
+                case imageType = "ImageType"
+                case platformProperties = "PlatformProperties"
+                case icon = "Icon"
+                case productId = "ProductId"
+                case type = "Type"
+                case title = "Title"
+            }
+        }
+        
+        enum CodingKeys: String, CodingKey {
+            case results = "Results"
+            case totalResultCount = "TotalResultCount"
+        }
+        
+        var allProducts: [XboxProductType] {
+            results.flatMap { $0.products }
+        }
+    }
+    
 }
 
 
