@@ -10,7 +10,18 @@ import Logging
 
 // MARK: - API types
 
-public struct XboxGame: Equatable, Codable, Sendable {
+public protocol GameProtocol: Equatable, Codable, Sendable {
+    var productId: String { get }
+    var productTitle: String { get }
+    var productDescription: String? { get }
+    var developerName: String? { get }
+    var publisherName: String? { get }
+    var shortTitle: String? { get }
+    var sortTitle: String? { get }
+    var shortDescription: String? { get }
+}
+
+public struct XboxGame: GameProtocol {
     
     public init(productId: String, productTitle: String, productDescription: String?, developerName: String?, publisherName: String?, shortTitle: String?, sortTitle: String?, shortDescription: String?, imageDescriptors: [XboxImageDescriptor]?) {
         self.productId = productId
