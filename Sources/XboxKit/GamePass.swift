@@ -23,7 +23,7 @@ public struct GamePassCollection: Equatable, Codable, Sendable {
     public let gameIds: [String]
 }
 
-public struct AvailabilityPeriod: Codable {
+public struct AvailabilityPeriod: Equatable, Codable, Sendable {
     public var start: Date
     public var end: Date?
 }
