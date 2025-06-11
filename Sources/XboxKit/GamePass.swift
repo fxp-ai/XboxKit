@@ -24,6 +24,12 @@ public struct GamePassCollection: Equatable, Codable, Sendable {
 }
 
 public struct AvailabilityPeriod: Equatable, Codable, Sendable {
+    
+    public init(start: Date, end: Date? = nil) {
+        self.start = start
+        self.end = end
+    }
+    
     public var start: Date
     public var end: Date?
 }
