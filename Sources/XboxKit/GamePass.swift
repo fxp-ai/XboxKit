@@ -23,6 +23,11 @@ public struct GamePassCollection: Equatable, Codable, Sendable {
     public let gameIds: [String]
 }
 
+public struct AvailabilityPeriod: Codable {
+    public var start: Date
+    public var end: Date?
+}
+
 // MARK: - API functions
 
 public enum GamePassCatalog {
