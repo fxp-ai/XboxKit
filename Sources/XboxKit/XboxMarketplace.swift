@@ -148,6 +148,12 @@ public struct GamePlayTime: Equatable, Sendable, Codable, Hashable {
     public let mainStory: Double?
     public let mainPlusExtras: Double?
     public let completionist: Double?
+    
+    public init(mainStory: Double?, mainPlusExtras: Double?, completionist: Double?) {
+        self.mainStory = mainStory
+        self.mainPlusExtras = mainPlusExtras
+        self.completionist = completionist
+    }
 }
 
 public enum XboxMarketplace {
