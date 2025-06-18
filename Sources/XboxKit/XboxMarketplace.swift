@@ -12,7 +12,7 @@ import Logging
 
 public struct XboxGame: Equatable, Sendable, Codable, Hashable {
     
-    public init(productId: String, productTitle: String, productDescription: String?, developerName: String?, publisherName: String?, shortTitle: String?, sortTitle: String?, shortDescription: String?, imageDescriptors: [XboxImageDescriptor]?) {
+    public init(productId: String, productTitle: String, productDescription: String?, developerName: String?, publisherName: String?, shortTitle: String?, sortTitle: String?, shortDescription: String?, imageDescriptors: [XboxImageDescriptor]?, reviews: GameReview? = nil, playtimes: GamePlayTime? = nil) {
         self.productId = productId
         self.productTitle = productTitle
         self.productDescription = productDescription
@@ -22,6 +22,8 @@ public struct XboxGame: Equatable, Sendable, Codable, Hashable {
         self.sortTitle = sortTitle
         self.shortDescription = shortDescription
         self.imageDescriptors = imageDescriptors
+        self.reviews = reviews
+        self.playtime = playtimes
     }
     
     public let productId: String
@@ -33,6 +35,8 @@ public struct XboxGame: Equatable, Sendable, Codable, Hashable {
     public let sortTitle: String?
     public let shortDescription: String?
     public let imageDescriptors: [XboxImageDescriptor]?
+    public let reviews: GameReview?
+    public let playtime: GamePlayTime?
 }
 
 public struct XboxImageDescriptor: Equatable, Sendable, Codable, Hashable {
@@ -61,6 +65,89 @@ public struct XboxImageDescriptor: Equatable, Sendable, Codable, Hashable {
         case imagePurpose = "ImagePurpose"
         case imagePositionInfo = "ImagePositionInfo"
     }
+}
+
+public struct GameReview: Equatable, Sendable, Codable, Hashable {
+    public let score: Double?
+    public let recentScore: Double?
+    public let totalReviews: Int?
+    
+    public init(score: Double?, recentScore: Double?, totalReviews: Int?) {
+        self.score = score
+        self.recentScore = recentScore
+        self.totalReviews = totalReviews
+    }
+    
+    public var summary: String? {
+        generateSummary(for: score)
+    }
+    
+    public var recentSummary: String? {
+        generateSummary(for: recentScore)
+    }
+    
+    private func generateSummary(for score: Double?) -> String? {
+        guard let score = score, let totalReviews = totalReviews else {
+            return nil
+        }
+        
+        switch (score, totalReviews) {
+        case (95...100, 500...):
+            return "Overwhelmingly Positive"
+        case (85...100, 50...):
+            return "Very Positive"
+        case (80...100, 10...):
+            return "Positive"
+        case (70...79, 10...):
+            return "Mostly Positive"
+        case (40...69, 10...):
+            return "Mixed"
+        case (20...39, 10...):
+            return "Mostly Negative"
+        case (0...19, 500...):
+            return "Overwhelmingly Negative"
+        case (0...19, 50...):
+            return "Very Negative"
+        case (0...19, 10...):
+            return "Negative"
+        default:
+            // Not enough reviews for a summary
+            return nil
+        }
+    }
+    
+    // Convenience computed property to check if there's enough data
+    public var hasValidData: Bool {
+        return score != nil && totalReviews != nil && totalReviews! >= 10
+    }
+    
+    // Convenience computed property for color coding in UI
+    public var sentiment: ReviewSentiment? {
+        guard let score = score else { return nil }
+        
+        switch score {
+        case 80...100:
+            return .positive
+        case 40...79:
+            return .mixed
+        case 0..<40:
+            return .negative
+        default:
+            return nil
+        }
+    }
+    
+    public enum ReviewSentiment {
+        case positive
+        case mixed
+        case negative
+    }
+}
+
+public struct GamePlayTime: Equatable, Sendable, Codable, Hashable {
+    public let mainStory: Double?
+    public let mainPlusExtras: Double?
+    public let completionist: Double?
 }
 
 public enum XboxMarketplace {
