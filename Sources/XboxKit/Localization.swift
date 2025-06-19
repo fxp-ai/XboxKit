@@ -6,6 +6,9 @@
 //
 
 import Foundation
+#if canImport(FoundationNetworking)
+import FoundationNetworking
+#endif
 
 public struct Market: Codable, Equatable, Sendable, Hashable {
     public let isoCode: String      // ISO 2-letter code (e.g., "US")
