@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: ["macOS"]
+        os: ["Linux", "macOS"]
 
     steps:
     
