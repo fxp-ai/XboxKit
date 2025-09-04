@@ -24,3 +24,5 @@ jobs:
     - name: Build for macOS
       if: matrix.os == 'macOS'
       run: swift build -c release
+    - name: Run tests
+      run: swift test
