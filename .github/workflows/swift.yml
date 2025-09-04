@@ -23,4 +23,4 @@ jobs:
       run: swift build -c release --static-swift-stdlib -Xlinker -ljemalloc
     - name: Build for macOS
       if: matrix.os == 'macOS'
-      run: swift build -c release -Xlinker -ljemalloc
+      run: swift build -c release
