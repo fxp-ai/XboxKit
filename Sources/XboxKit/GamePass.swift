@@ -141,5 +141,41 @@ public enum GamePassCatalog {
     public static let kEAPlayPcIdentifier = "1d33fbb9-b895-4732-a8ca-a55c8b99fa2c"
     public static let kEAPlayTrialConsoleIdentifier = "490f4b6e-a107-4d6a-8398-225ee916e1f2"
     public static let kEAPlayTrialPcIdentifier = "19e5b90a-5a20-4b1d-9dda-6441ca632527"
+    
+    public static let kAllGamePassIdentifiers = [
+        kGamePassConsoleIdentifier,
+        kGamePassCoreIdentifier,
+        kGamePassStandardIdentifier,
+        kGamePassPcIdentifier,
+        kGamePassPcSecondaryIdentifier,
+        kGamePassConsoleSecondaryIdentifier,
+        kConsoleDayOneReleasesIdentifier,
+        kPcDayOneReleasesIdentifier,
+        kConsoleMostPopularIdentifier,
+        kPcMostPopularIdentifier,
+        kGamePassCoreMostPopularIdentifier,
+        kGamePassStandardMostPopularIdentifier,
+        kCloudMostPopularIdentifier,
+        kConsoleRecentlyAddedIdentifier,
+        kPcRecentlyAddedIdentifier,
+        kGamePassStandardRecentlyAddedIdentifier,
+        kConsoleComingToIdentifier,
+        kPcComingToIdentifier,
+        kGamePassStandardComingToIdentifier,
+        kConsoleLeavingSoonIdentifier,
+        kPcLeavingSoonIdentifier,
+        kGamePassStandardLeavingSoonIdentifier,
+        kUbisoftConsoleIdentifier,
+        kUbisoftPcIdentifier,
+        kEAPlayConsoleIdentifier,
+        kEAPlayPcIdentifier,
+        kEAPlayTrialConsoleIdentifier,
+        kEAPlayTrialPcIdentifier,
+    ]
+    
+    /// Check if a language locale is supported
+    public static func isSupported(identifier: String) -> Bool {
+        kAllGamePassIdentifiers.contains(identifier)
+    }
 
 }
