@@ -96,7 +96,8 @@ final class AppTests: XCTestCase {
 
     func testAllKnownCatalogIdentifiers() async throws {
         let identifiers = [
-            ("Console", GamePassCatalog.kGamePassConsoleIdentifier), ("PC", GamePassCatalog.kGamePassPcIdentifier),
+            ("Console", GamePassCatalog.kGamePassConsoleIdentifier),
+            ("PC", GamePassCatalog.kGamePassPcIdentifier),
             ("Standard", GamePassCatalog.kGamePassStandardIdentifier),
             ("Core", GamePassCatalog.kGamePassCoreIdentifier),
             ("Console Most Popular", GamePassCatalog.kConsoleMostPopularIdentifier),
@@ -238,6 +239,12 @@ final class AppTests: XCTestCase {
                 httpResponse.statusCode, 200,
                 "Product API should return 200 for valid request (got \(httpResponse.statusCode))")
         }
+    }
+    
+    func testIsValidIdentifiers() {
+        XCTAssert(GamePassCatalog.isValidIdentifier(identifier: GamePassCatalog.kGamePassConsoleIdentifier))
+        let invalidIdentifier = GamePassCatalog.kGamePassConsoleIdentifier + "invalid"
+        XCTAssert(!GamePassCatalog.isValidIdentifier(identifier: invalidIdentifier))
     }
 
 }

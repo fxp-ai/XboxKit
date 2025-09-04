@@ -174,7 +174,7 @@ public enum GamePassCatalog {
     ]
     
     /// Check if a language locale is supported
-    public static func isSupported(identifier: String) -> Bool {
+    public static func isValidIdentifier(identifier: String) -> Bool {
         kAllGamePassIdentifiers.contains(identifier)
     }
 
